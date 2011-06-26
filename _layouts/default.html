@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+     <title>
+       {% if page.title %}
+         {{ page.title }} //
+       {% endif %}
+       bill-ingram.com
+     </title>
+     <meta name="author" content="Bill Ingram" />
+     {% if page.summary %}
+       <meta namne="description" content="{{ page.summary }}" />
+     {% endif %}
+     <link href="http://feeds2.feedburner.com/waingram" rel="alternate" title="Bill Ingram" type="application/atom+xml" />
+
+     <link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" />
+     <link rel="stylesheet" href="/stylesheets/default.css" type="text/css" />
+
+     {% for css in page.css %}
+       <link rel="stylesheet" href="{{ css }}" type="text/css" />
+     {% endfor %}
+  </head>
+  <body>
+    <a href="http://github.com/waingram"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://d3nwyuy0nl342s.cloudfront.net/img/edc6dae7a1079163caf7f17c60495bbb6d027c93/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub"></a>
+
+    <div id="site">
+      <a id="subscribe" href="http://feeds2.feedburner.com/waingram"><img src="/images/rss.png" alt="Subscribe to RSS Feed" /></a>
+
+      <div id="search_area" style="display: none">
+        <label for="search" style="display: none">Search</label>
+        <img src="http://www.famfamfam.com/lab/icons/silk/icons/cancel.png" alt="X"/>
+        <input id="search" />
+      </div>
+      
+			<div class="clear"></div>
+			
+			<div id="header">
+      	<h1><a href="/">bill-ingram.com</a></h1>
+				<br style="clear: both">
+			</div>
+      
+      <div class="clear"></div>
+      
+      <div id="sidebar">
+				<div class="vcard">
+        	<h3>Me</h3>
+        	<dl id="contact">
+          	<dt>Name</dt>
+          	<dd><a class="fn url" href="/">Bill Ingram</a> / <span class="nickname">sudobear</span></dd>
+
+          	<dt>Email</dt>
+          	<dd class="email"><a href="mailto:waingram@gmail.com">waingram@gmail.com</a></dd>
+
+          	<dt>Telephone</dt>
+          	<dd class="tel">+1 757 277 8027</a></dd>
+    
+          	<!-- <dt>Company</dt>
+            <dd class="org"><a href="http://bill-ingram.com/">bill-ingram.com</a></dd> -->
+        	</dl>
+        	<h3>Elsewhere</h3>
+        	<ul id="profiles">
+          	<li><img src="/images/twitter_16.png"/>&nbsp;<a rel="me" href="http://twitter.com/sudobear">Twitter</a></li>
+          	<li><img src="/images/github_16.png"/>&nbsp;<a rel="me" href="http://github.com/waingram">GitHub</a></li>
+          	<li><img src="/images/linkedin_16.png"/>&nbsp;<a rel="me" href="http://www.linkedin.com/in/williamingram">LinkedIn</a></li>
+          	<li><img src="/images/flickr_16.png"/>&nbsp;<a rel="me" href="http://www.flickr.com/photos/billingram/">Flickr</a></li>
+          	<li><img src="/images/tumblr_16.png"/>&nbsp;<a rel="me" href="http://sudobear.tumblr.com/">Tumblr</a></li>
+          	<li><img src="/images/lastfm_16.png"/>&nbsp;<a rel="me" href="http://www.lastfm.com//bill_ingram">Last.fm</a></li>
+          	<li><img src="/images/delicious_16.png"/>&nbsp;<a rel="me" href="http://www.delicious.com/william.ingram">del.icio.us</a></li>
+          	<li><img src="/images/google_16.png"/>&nbsp;<a rel="me" href="http://www.google.com/profiles/waingram">Google</a></li>
+        	</ul>
+        
+         	<div class="adr">
+          	<span class="locality">Urbana</span>
+          	<span class="region">IL</span>
+          	<span class="postal-code">61801</span>
+          	<span class="country-name">USA</span>
+
+        	</div>
+				</div>
+				
+				<ul class="nav">
+			  	<li><a href="/about" title="About">About</a></li>
+					<li><a href="/vitae" title="Vitæ">Vitæ</a></li>				  
+				</ul>	
+				<ul class="footer">
+					<li>Icons by <a href="http://komodomedia.com/">Komondo Media</a></li>
+					<li>Design based on <a href="http://jqr.github.com/">Elijah Miller</a></li>
+					<li>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a></li>
+					<li>&copy; 2009&ndash;2011 bill-ingram.com</li>
+      </div>
+      
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/prototype/1.6/prototype.js"></script>
+      
+      <div id="content">
+        {{ content }}
+      </div>
+      
+      <div class="clear"></div>
+      
+    </div>
+
+    {% for js in page.javascript %}
+      <script type="text/javascript" src="{{ js }}"></script>
+    {% endfor %}
+
+<!--     <script type="text/javascript">
+    //<![CDATA[
+    (function() {
+    		var links = document.getElementsByTagName('a');
+    		var query = '?';
+    		for(var i = 0; i < links.length; i++) {
+    			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+    				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+    			}
+    		}
+        document.write('<script type="text/javascript" src="http://disqus.com/forums/waingram/get_num_replies.js' + query + '"></' + 'script>');
+    	})();
+    //]]>
+    </script> -->
+
+    <!-- <script type="text/javascript">
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script>
+      <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker("UA-xxx-10");
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script> -->
+
+    <!-- <script type="text/javascript">
+      (function() {
+        var t   = document.createElement('script');
+        t.type  = 'text/javascript';
+        t.async = true;
+        t.id    = 'gauges-tracker';
+        t.setAttribute('data-site-id',
+                       'xxx');
+        t.src = '//secure.gaug.es/track.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(t, s);
+      })();
+    </script> -->
+  </body>
+</html>
