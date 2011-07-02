@@ -14,13 +14,13 @@ Or do it the proper way
 
 Remove it from rc.d
 
-<code><pre>sudo update-rc.d postgresql-8.4 remove
+<pre><code>sudo update-rc.d postgresql-8.4 remove
   update-rc.d: /etc/init.d/postgresql-8.4 exists during rc.d purge (use -f to force)
-</pre></code>
+</code></pre>
 
 This time with force!
 
-<code><pre>sudo update-rc.d -f postgresql-8.4 remove
+<pre><code>sudo update-rc.d -f postgresql-8.4 remove
   Removing any system startup links for /etc/init.d/postgresql-8.4 ...
     /etc/rc0.d/K19postgresql-8.4
     /etc/rc1.d/K19postgresql-8.4
@@ -29,6 +29,6 @@ This time with force!
     /etc/rc4.d/S19postgresql-8.4
     /etc/rc5.d/S19postgresql-8.4
     /etc/rc6.d/K19postgresql-8.4
-</pre></code>
+</code></pre>
 
 That's it.
