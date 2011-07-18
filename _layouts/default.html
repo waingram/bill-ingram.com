@@ -13,7 +13,7 @@
      {% if page.summary %}
        <meta namne="description" content="{{ page.summary }}" />
      {% endif %}
-     <link href="http://feeds2.feedburner.com/waingram" rel="alternate" title="Bill Ingram" type="application/atom+xml" />
+     <link href="http://feeds.feedburner.com/waingram" rel="alternate" title="Bill Ingram" type="application/atom+xml" />
 
      <link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" />
      <link rel="stylesheet" href="/stylesheets/default.css" type="text/css" />
@@ -26,7 +26,7 @@
     <a href="http://github.com/waingram"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://d3nwyuy0nl342s.cloudfront.net/img/edc6dae7a1079163caf7f17c60495bbb6d027c93/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub"></a>
 
     <div id="site">
-      <a id="subscribe" href="http://feeds2.feedburner.com/waingram"><img src="/images/rss.png" alt="Subscribe to RSS Feed" /></a>
+      <a id="subscribe" href="http://feeds.feedburner.com/waingram"><img src="/images/rss.png" alt="Subscribe to RSS Feed" /></a>
 
       <div id="search_area" style="display: none">
         <label for="search" style="display: none">Search</label>
@@ -49,7 +49,7 @@
         	<h3>Me</h3>
         	<dl id="contact">
           	<dt>Name</dt>
-          	<dd><a class="fn url" href="http://bill-ingram.com/">Bill Ingram</a> / <span class="nickname">sudobear</span></dd>
+          	<dd><a class="fn url" href="http://bill-ingram.com/">Bill Ingram</a> / <span class="nickname">waingram</span> / <span class="nickname">sudobear</span></dd>
 
           	<dt>Email</dt>
           	<dd class="email"><a href="mailto:waingram@gmail.com">waingram@gmail.com</a></dd>
@@ -121,7 +121,8 @@
       <script type="text/javascript" src="{{ js }}"></script>
     {% endfor %}
 
-<!--     <script type="text/javascript">
+
+    <!-- <script type="text/javascript">
     //<![CDATA[
     (function() {
     		var links = document.getElementsByTagName('a');
@@ -136,16 +137,29 @@
     //]]>
     </script> -->
 
-    <!-- <script type="text/javascript">
+		<script type="text/javascript">
+		    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+		    var disqus_shortname = 'bill-ingram-com'; // required: replace example with your forum shortname
+
+		    /* * * DON'T EDIT BELOW THIS LINE * * */
+		    (function () {
+		        var s = document.createElement('script'); s.async = true;
+		        s.type = 'text/javascript';
+		        s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+		        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+		    }());
+		</script>
+
+    <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
       </script>
       <script type="text/javascript">
       try {
-      var pageTracker = _gat._getTracker("UA-xxx-10");
+      var pageTracker = _gat._getTracker("UA-10899813-1");
       pageTracker._trackPageview();
       } catch(err) {}
-    </script> -->
+    </script>
 
     <!-- <script type="text/javascript">
       (function() {

@@ -4,13 +4,13 @@ layout: nil
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>William Ingram</title>
+ <title>Bill Ingram</title>
  <link href="http://bill-ingram.com/atom.xml" rel="self"/>
  <link href="http://bill-ingram.com/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
  <id>http://bill-ingram.com/</id>
  <author>
-   <name>William Ingram</name>
+   <name>Bill Ingram</name>
    <email>waingram@gmail.com</email>
  </author>
  
