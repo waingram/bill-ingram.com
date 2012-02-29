@@ -1,18 +1,112 @@
 <!doctype html>
-<html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
   <head>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <meta charset="utf-8">
+
+    <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+         More info: h5bp.com/i/378 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title><%= title %></title>
+    <meta name="description" content="">
+
+    <!-- Mobile viewport optimized: h5bp.com/viewport -->
+    <meta name="viewport" content="width=device-width">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory: mathiasbynens.be/notes/touch-icons -->
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/site.css" />
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
-    <title><%= title %></title>
+    <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+    <!-- All JavaScript at the bottom, except this Modernizr build.
+         Modernizr enables HTML5 elements & feature detects for optimal performance.
+         Create your own custom Modernizr build: www.modernizr.com/download/ -->
+    <script src="js/libs/modernizr-2.5.3.min.js"></script>
   </head>
-  <body>
-    <section>
-      <%= yield %> 
-    </section>
-    <footer>
-      powered by <a href="http://cloudhead.io/toto">toto</a>
-    </footer>
+  <body class="<%= title %>">
+    <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+         chromium.org/developers/how-tos/chrome-frame-getting-started -->
+    <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <div class="page">
+      <header class="main">
+        <h1><a href="/">bill-ingram.com</a></h1>
+      </header>
+      <nav class="main">
+        <ul id="nav">
+          <li class="current"
+          id="nav-archive"><a href="/archives/">Archives</a></li>
+          <li id="nav-cv"><a href="/cv/">C.V.</a></li>
+        </ul>
+      </nav>
+      <div id="content">
+        <div id="main">
+          <%= yield %> 
+        </div>
+        <div id="side">
+          <section class="bio">
+            <img src="http://www.gravatar.com/avatar/d72e758af6c2511728d5d78848774404.png?s=50"
+                 alt="Bill Ingram"/>
+            <p>As Research Programmer for Scholarly Communication and
+              Repository Services, part of the Library Research and
+              Publication group at the University of Illinois at
+              Urbana-Champaign, I manage the university's
+              institutional repository and electronic thesis deposit
+              system, and lead the development team for the library's
+              preservation archive system.</p>
+          </section>
+          <section class="apps">
+            <h1>My Work</h1>
+            <ul>
+              <li><a href="http://www.ideals.illinois.edu/">IDEALS</a></li>
+              <li><a href="http://etd.ideals.illinois.edu/">Vireo</a></li>
+              <li><a href="http://connections.ideals.illinois.edu/">BibApp</a></li>
+              <li><a href="/">Medusa</a></li>
+            </ul>
+          </section>
+          <section>
+            <h1>Elsewhere on the Web</h1>
+            <ul>
+              <li><a href="https://github.com/waingram">GitHub</a></li>
+              <li><a href="http://linkedin.com/waingram">LinkedIn</a></li>
+              <li><a href="http://flickr.com/sudobear">Flickr</a></li>
+              <li><a href="http://google.com/whatever">Google+</a></li>
+              <li><a href="http://twitter.com/sudobear">Twitter</a></li>
+            </ul>
+          </section>
+        </div>
+      <footer>
+        Copyright © 2010-2012 <a href="http://bill-ingram.com/">Bill Ingram</a>
+      </footer>
+    </div>
+
+    <!-- JavaScript at the bottom for fast page loading -->
+
+    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+      <!-- scripts concatenated and minified via build script -->
+      <script src="js/plugins.js"></script>
+      <script src="js/script.js"></script>
+      <!-- end scripts -->
+
+      <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+           mathiasbynens.be/notes/async-analytics-snippet -->
+      <script>
+        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+        s.parentNode.insertBefore(g,s)}(document,'script'));
+      </script>
   </body>
 </html>
+
 
