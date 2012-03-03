@@ -27,8 +27,9 @@ toto = Toto::Server.new do
   # set :ext,       'txt'                                     # file extension for articles
   # set :cache,      28800                                    # cache duration, in seconds
 
-  set :date, lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
-
+  set :date,   lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
+  set :author, "Bill Ingram"
+  set :title,  "bill-ingram.com"
   
 end
 
