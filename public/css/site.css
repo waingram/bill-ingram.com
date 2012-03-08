@@ -116,13 +116,9 @@ footer {
 /* Type */
 body {
   font-size: 100%;
-  line-height: 1.4;
-  font-family:  calluna,Georgia,Times,Times New Roman,georgia,palatino,"palatino linotype",serif;
-  color: #595959; }
+  color: #57a0fe; }
 
 code {
-  font-family: Menlo, Consolas, Monaco, monospace;
-  font-size: 80%;
   border: 1px solid #efefef;
   padding-left: 0.3em;
   padding-right: 0.3em; }
@@ -164,7 +160,7 @@ header.main h1 {
   margin-bottom: 0; }
   header.main h1 a {
     text-decoration: none;
-    color: #595959; }
+    color: #57a0fe; }
 
 nav.main {
   margin-top: 0.6em; }
@@ -186,14 +182,14 @@ article.post {
         article.post header h1 a:hover {
           text-decoration: underline; }
       article.post header h1 span.external-link {
-        color: #a9a9a9;
+        color: #a0fe57;
         display: inline-block;
         margin-top: 10px; }
   article.post .date {
     font-size: 90%;
-    color: #a9a9a9; }
+    color: #a0fe57; }
     article.post .date a {
-      color: #a9a9a9;
+      color: #a0fe57;
       text-decoration: none; }
       article.post .date a:hover {
         text-decoration: underline; }
@@ -230,7 +226,7 @@ div#side {
     div#side a:hover {
       text-decoration: underline; }
   div#side:hover {
-    color: #595959; }
+    color: #57a0fe; }
     div#side:hover a {
       color: #1b676b; }
   div#side section h1 {
@@ -246,10 +242,10 @@ div#side {
     border-radius: 4px; }
 
 footer {
-  color: #a9a9a9;
+  color: silver;;
   font-size: 90%; }
   footer a, footer a:visited, footer a:active {
-    color: #a9a9a9; }
+    color: silver; }
 
 body.blog #main h2 {
   margin-bottom: 0.3em; }
@@ -268,7 +264,7 @@ body.blog #main ol.articles {
     body.blog #main ol.articles li span.month {
       display: block;
       float: left;
-      color: #a9a9a9;
+      color: #a0fe57;
       font-family: Menlo, Consolas, Monaco, monospace;
       font-size: 0.8em;
       line-height: 2.1em; }
@@ -289,8 +285,6 @@ body.contact form label {
 body.contact form input, body.contact form textarea {
   display: block;
   width: 100%;
-  font-family: calluna,Georgia,Times,Times New Roman,georgia,palatino,"palatino linotype",serif;
-  font-size: 1em;
   padding: 0.2em;
-  color: #595959;
-  border: 1px solid #a9a9a9; }
+  color: #57a0fe;
+  border: 1px solid #a0fe57; }
