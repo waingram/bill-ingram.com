@@ -19,7 +19,7 @@ abbr,acronym,dfn{border-bottom:1px dotted;cursor:help;font-style:normal;font-var
 var{font-style:normal;}
 center{text-align:center;}
 a:focus{outline:1px dotted;}
-body{text-shadow:0px 1px 0px rgba(255, 255, 255, 0.6);font-size:14px;width:820px;margin:0 auto;}
+body{text-shadow:0px 1px 0px rgba(255, 255, 255, 0.6)}
 
 /* Layout */
 .page {
