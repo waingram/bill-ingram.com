@@ -1,3 +1,24 @@
+/* Type */
+html{font-size:100%;}
+body{font-family:calluna, Times New Roman, Times, serif;font-size:.875em;line-height:1.5;}
+html.Windows body{font-family:Georgia,Times,Times New Roman,georgia,palatino,"palatino linotype",serif;}
+html.Mac body,html.Linux body{font-family:calluna, Georgia, Times, Times New Roman, serif;}
+h1,h2,h3,h4,h5,h6{font-family:Georgia, Times New Roman, Times, serif;font-weight:bold;}
+h1{font-size:3em;line-height:1.1;margin-bottom:.238em;}
+h2{font-size:2em;line-height:1.15;margin-bottom:.357em;}
+h3{font-size:1.5em;line-height:1.2;margin-bottom:.476em;}
+h4,h5,h6{font-size:1em;margin-bottom:.715em;}
+em,i{font-style:italic;}
+strong,b{font-weight:bold;}
+blockquote,q,cite{font-style:italic;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:none;content:"";}
+code,kbd,pre,samp,tt{font-size:12px;font-family:"andale mono",consolas,monaco,"lucida console","courier new",courier,monospace;line-height:1.3;}
+pre{white-space:pre-wrap;}
+abbr,acronym,dfn{border-bottom:1px dotted;cursor:help;font-style:normal;font-variant:normal;}
+var{font-style:normal;}
+center{text-align:center;}
+a:focus{outline:1px dotted;}
 
 /* Layout */
 .page {
@@ -96,7 +117,7 @@ footer {
 body {
   font-size: 100%;
   line-height: 1.4;
-  font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Palatino, Georgia;
+  font-family:  calluna,Georgia,Times,Times New Roman,georgia,palatino,"palatino linotype",serif;
   color: #595959; }
 
 code {
@@ -268,7 +289,7 @@ body.contact form label {
 body.contact form input, body.contact form textarea {
   display: block;
   width: 100%;
-  font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", Palatino, Georgia;
+  font-family: calluna,Georgia,Times,Times New Roman,georgia,palatino,"palatino linotype",serif;
   font-size: 1em;
   padding: 0.2em;
   color: #595959;
