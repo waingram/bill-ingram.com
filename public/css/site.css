@@ -131,7 +131,7 @@ code {
     font-size: 95%; } }
 /* General styles */
 a, a:visited, a:active {
-  color: #1b676b; }
+  color: #a0fe57; }
 
 p, pre, ul, ol {
   margin-bottom: 0.9em; }
@@ -182,14 +182,14 @@ article.post {
         article.post header h1 a:hover {
           text-decoration: underline; }
       article.post header h1 span.external-link {
-        color: #a0fe57;
+        color: #fe57a1;
         display: inline-block;
         margin-top: 10px; }
   article.post .date {
     font-size: 90%;
-    color: #a0fe57; }
+    color: #fe57a1; }
     article.post .date a {
-      color: #a0fe57;
+      color: #fe57a1;
       text-decoration: none; }
       article.post .date a:hover {
         text-decoration: underline; }
@@ -228,7 +228,7 @@ div#side {
   div#side:hover {
     color: #57a0fe; }
     div#side:hover a {
-      color: #1b676b; }
+      color: #a0fe57; }
   div#side section h1 {
     margin-bottom: 0.2em; }
   div#side section ul, div#side section ol {
@@ -264,7 +264,7 @@ body.blog #main ol.articles {
     body.blog #main ol.articles li span.month {
       display: block;
       float: left;
-      color: #a0fe57;
+      color: #fe57a1;
       font-family: Menlo, Consolas, Monaco, monospace;
       font-size: 0.8em;
       line-height: 2.1em; }
@@ -287,4 +287,4 @@ body.contact form input, body.contact form textarea {
   width: 100%;
   padding: 0.2em;
   color: #57a0fe;
-  border: 1px solid #a0fe57; }
+  border: 1px solid #fe57a1; }
