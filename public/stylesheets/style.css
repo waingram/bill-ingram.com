@@ -218,6 +218,413 @@ td { vertical-align: top; }
    Author: Bill Ingram <waingram@gmail.com>
    ========================================================================== */
 
+html,body{
+    width:100%;
+    height:100%;
+} 
+
+body {
+    font-family: Tahoma,Helvetica,Verdana,sans-serif;
+    font-size: 120%;
+    color: #333
+    background: white;
+    text-rendering: optimizeLegibility; 
+}
+
+
+/* Responsive Background Image */
+body.profilepage{
+    background-color:#000;
+    background-position:50% 30px;
+    background-repeat:repeat;
+    overflow-y:auto;
+}
+
+.profilepage .background-container{
+    z-index:0;
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background-repeat:no-repeat;
+    background-position:50% 0;
+}
+
+.profilepage .background-container.legacy{
+    left:0;
+    top:0;
+    width:100%;
+    height:auto;
+    background-position:50% 50%;
+    position:absolute;
+}
+
+.profilepage .background-container.centered{
+    background-repeat:no-repeat;
+}
+
+.profilepage .background-container.repeated{
+    background-repeat:repeat;
+}
+
+.profilepage .background-container.scaled{
+    background-repeat:no-repeat;
+    background-image:none;
+}
+
+.profilepage #background_guide_wrap{
+    display:none;
+}
+
+.profilepage div.background_guide{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:0;
+}
+
+.profilepage div.background_guide div{
+    border-style:solid;
+    border-width:0 1px 1px 1px;
+    left:50%;
+    position:absolute;
+}
+
+.profilepage div.background_guide div span{
+    position:absolute;
+    right:0;
+    bottom:0;
+    height:19px;
+    font-weight:500;
+    text-align:center;
+    color:#fff;
+    font-size:8px;
+    text-transform:uppercase;
+    line-height:1.1;
+    padding:9px 10px 0 10px;
+    letter-spacing:1px;
+    border-style:solid;
+    border-width:1px 0 0 1px;
+}
+
+.profilepage div.background_guide div.guide_viewable_content{
+    width:960px;
+    height:590px;
+    border-color:#66d111;
+    margin-left:-480px;
+}
+
+.profilepage div.background_guide div.guide_viewable_content span{
+    border-color:#66d111;
+    background:transparent url(../images/bg_guide_bg_green.png) 0 0 repeat;
+}
+
+.profilepage div.background_guide div.guide_optimal_background{
+    width:1024px;
+    height:738px;
+    border-color:#c0058f;
+    margin-left:-512px;
+}
+
+.profilepage div.background_guide div.guide_max_background{
+    width:1680px;
+    height:1020px;
+    border-color:#c0058f;
+    margin-left:-840px;
+}
+
+.profilepage div.background_guide div.guide_optimal_background span,.profilepage div.background_guide div.guide_max_background span{
+    border-color:#c0058f;
+    background:transparent url(../images/bg_guide_bg_pink.png) 0 0 repeat;
+}
+
+
+div.page{
+    z-index:0;
+    overflow:visible;
+}
+
+
+/* Layout */
+div.page {
+
+}
+
+div.page {
+    margin: 1% 15%;   
+    background-color: transparent;
+    /* position:absolute; */
+    /* left:50%; */
+    /* top:129px; */
+    border-radius-topleft: 3px;
+    border-radius-topright: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border: 1px solid transparent;
+}
+
+header.main {
+    float: left;
+    width: 50%;
+    margin: 0 0 2em 0;  
+}
+
+nav {
+    overflow: hidden;
+    *zoom: 1;
+    float: right;  
+}
+nav li {
+    float: left;
+    text-align: right;
+    margin-right: 3em;  
+}
+nav li:last-child {
+    margin-right: 0;  
+}
+
+#content {
+    width: 100%;  
+}
+
+#main {
+    width: 67%;
+    float: left;
+    clear: both;  
+}
+
+#side {
+    width: 27%;
+    float: right;  
+}
+#side section {
+    margin: 0 0 2em 0;  
+}
+
+footer {
+    clear: both;  
+}
+
+/* General styles */
+a, a:visited, a:active {
+    color: #41be48;  
+}
+
+a:hover {
+    color: #fe57a1;
+}
+
+p, pre, ul, ol {
+    margin-bottom: 0.9em;
+    margin-right: 1.1em;
+}
+
+img {
+    max-width: 100%;  
+}
+
+ul {
+    list-style-type: square;  
+}
+
+h1 {
+    font-size: 120%;
+    font-weight: normal;
+    margin-bottom: 1em;  
+}
+
+blockquote {
+    margin: 0 2em;
+    padding-left: 0.5em;
+    border-left: 5px solid #ccc;
+    color: #fcfcfc;  
+}
+
+/* Specific styles */
+header.main h1 {
+    font-weight: 300;
+    font-size: 400%;
+    margin-bottom: 0;  
+    font-family: "league-gothic", sans-serif;
+}
+header.main h1 a {
+    text-decoration: none;
+}
+
+nav.main {
+    margin-top: 0.6em;  
+}
+nav.main a {
+    text-decoration: none;  
+}
+nav.main a:hover {
+    text-decoration: underline;  
+}
+
+div#main, div#side {
+    background-color: rgba(255,255,255,0.5);
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    padding: 10px 0 20px 20px;
+}
+
+article.post {
+    margin-bottom: 5em;
+}
+article.post header {
+    margin-bottom: 1em;  
+}
+article.post header h1 {
+    font-size: 140%;
+    line-height: 1;
+    margin-bottom: 0;
+}
+article.post header h1 a {
+    text-decoration: none;  
+}
+article.post header h1 a:hover {
+    text-decoration: underline;  
+}
+article.post header h1 span.external-link {
+    color: #fe57a1;
+    display: inline-block;
+    margin-top: 10px;  
+}
+article.post .date {
+    font-size: 90%;
+    color: #fe57a1;
+}
+article.post .date a {
+    color: #fe57a1;
+    text-decoration: none;  
+}
+article.post .date a:hover {
+    text-decoration: underline;  
+}
+article.post pre {
+    padding: 1em;
+    background: #efefef;
+    overflow-x: scroll;
+
+/* Fancy webkit-only scrollbars */  
+}
+article.post pre::-webkit-scrollbar {
+    height: 1.2ex;  
+}
+article.post pre::-webkit-scrollbar-thumb:horizontal {
+    background: rgba(0, 0, 0, 0.15);
+    -webkit-border-radius: 1ex;  
+}
+article.post pre::-webkit-scrollbar-thumb:horizontal:hover {
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;  
+}
+article.post pre::-webkit-scrollbar-thumb:horizontal:active {
+    background: #df242a;  
+}
+
+article.post.photo header {
+    margin-bottom: 0.2em;  
+}
+article.post.photo img.photo {
+    margin-bottom: 0.8em;  
+}
+
+div#side {
+    /* colors, links, etc. */
+    -webkit-transition: color 0.2s linear;
+    font-size: 0.9em;
+    line-height: 1.4;
+ }
+div#side section h1 {
+    margin-bottom: 0.2em;  
+}
+div#side section ul, div#side section ol {
+    list-style-type: none;  
+}
+div#side section.bio img {
+    display: block;
+    float: left;
+    margin: 0 0.6em 0.2em 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;  
+}
+
+footer {
+    color: silver;
+    font-size: 90%;  
+}
+footer a, footer a:visited, footer a:active {
+    color: silver;  
+}
+
+body.blog #main h2 {
+    margin-bottom: 0.3em;  
+}
+body.blog #main ol.archives {
+    list-style-type: none;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    -o-column-count: 3;
+    column-count: 3;  
+}
+body.blog #main ol.articles {
+    list-style-type: none;  
+}
+body.blog #main ol.articles li {
+    overflow: hidden;
+    *zoom: 1;
+    margin-bottom: 0.3em;  
+}
+body.blog #main ol.articles li span.month {
+    display:  block;
+    float:    left;
+    color:    #fe57a1;
+    font-family: Menlo, Consolas, Monaco, monospace;
+    font-size: 0.8em;
+    line-height: 2.1em;  
+}
+body.blog #main ol.articles li a {
+    display:  block;
+    margin-left: 2.5em;  
+}
+body.blog #main ol.articles a {
+    text-decoration: none;  
+}
+body.blog #main ol.articles a:hover {
+    text-decoration: underline;  
+}
+
+body.contact form label {
+    display: block;
+    margin-bottom: 0.6em; 
+}
+body.contact form label strong {
+    display: block;
+    margin-bottom: 0.2em; 
+}
+body.contact form input, body.contact form textarea {
+    display: block;
+    width:   100%;
+    padding: 0.2em;
+    color:   #FFFFFF;
+    border:  1px solid #fe57a1; 
+}
+
+
+
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
@@ -225,8 +632,94 @@ td { vertical-align: top; }
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+/* Layout: smaller than 600px, iPhones and mobile devices */
+@media handheld and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
+    .page {
+        margin: 1% 8%;  
+    }
+
+    header.main {
+        float: none;
+        margin: 0 0 1em 0;  
+    }
+
+    nav {
+        float: none;
+        margin: 0 0 2em 0;  
+    }
+
+    #main {
+        width: auto;
+        float: none;
+        margin: 0 0 2em 0;  
+    }
+
+    #side {
+        width: auto;
+        float: none;  
+    }
+
+    body.blog #main ol.archives {
+        -webkit-column-count: 2 !important;
+        -moz-column-count: 2 !important;
+        -o-column-count: 2 !important;
+        column-count: 2 !important;  
+    }  
+}
+
+/* Layout: screens smaller than 900px */
+@media screen and (max-width: 900px) {
+    .page {
+        margin: 1% 8%;  
+    }
+
+    body.blog #main ol.archives {
+        -webkit-column-count: 2 !important;
+        -moz-column-count: 2 !important;
+        -o-column-count: 2 !important;
+        column-count: 2 !important;  
+    }  
+}
+
+/* Layout: screens larger than 900px */
+/* Layout: screens larger than 1350px */
+@media screen and (min-width: 1350px) {
+    #main {
+        width: 50%; 
+        
+    }
+    #side {
+        width: 44%; 
+        
+    }
+    #side section.apps {
+        width: 43%;
+        float: left; 
+        
+    }
+    #side section.social {
+        float: left;
+        width: 45%; 
+        
+    }
+    #side section.presentations {
+        clear: both; 
+        
+    } 
+    
+}
+
+/* Responsive Typesetting */
+@media screen and (max-width: 500px) {
+/* nav ul {font-size: 0.75em; 
+   } */  
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        font-size: 95%;  
+    }  
 }
 
 

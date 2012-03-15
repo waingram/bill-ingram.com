@@ -25,8 +25,8 @@
     <script type="text/javascript" src="http://use.typekit.com/zni4xdb.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <link rel="stylesheet" href="/stylesheets/site.css" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
+
     <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
     <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
@@ -35,11 +35,43 @@
          Modernizr enables HTML5 elements & feature detects for optimal performance.
          Create your own custom Modernizr build: www.modernizr.com/download/ -->
     <script src="js/libs/modernizr-2.5.3.min.js"></script>
+
+    <!--style type="text/css">
+      /* tiled */
+      .profilepage .background-container {
+          background-image: url(../images/waingram.jpg);
+      }
+    </style-->
+
   </head>
-  <body class="<%= title %>">
+  <body class="profilepage">
     <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
          chromium.org/developers/how-tos/chrome-frame-getting-started -->
-    <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+    <!--[if lt IE 7]><p class=chromeframe>Your browser
+        is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade
+        to a different browser</a>
+        or <a href="http://www.google.com/chromeframe/?redirect=true">install
+        Google Chrome Frame</a> to experience this
+        site.</p><![endif]-->
+    <div class="background-container" style="width: 100%;">
+      <div id="background_guide_wrap">
+        <div class="background_guide">
+          <div class="guide_viewable_content">
+            <span>960x620 : Viewable Content</span>
+          </div>
+        </div>
+        <div class="background_guide">
+          <div class="guide_optimal_background">
+            <span>1024x768 : Optimal Background</span>
+          </div>
+        </div>
+        <div class="background_guide">
+          <div class="guide_max_background">
+            <span>1680x1050 : Maximum Background</span>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="page">
       <header class="main">
         <h1><a href="/">bill-ingram.com</a></h1>
@@ -68,7 +100,7 @@
               preservation archive system.</p>
           </section>
           <section class="apps">
-            <h1>My Work</h1>
+            <h1>Projects</h1>
             <ul>
               <li><a href="http://www.ideals.illinois.edu/">IDEALS</a></li>
               <li><a href="http://etd.ideals.illinois.edu/">Vireo</a></li>
@@ -76,8 +108,8 @@
               <li><a href="/">Medusa</a></li>
             </ul>
           </section>
-          <section>
-            <h1>Elsewhere on the Web</h1>
+          <section class="social">
+            <h1>Connect</h1>
             <ul>
               <li><a href="https://github.com/waingram">GitHub</a></li>
               <li><a href="http://www.linkedin.com/in/waingram">LinkedIn</a></li>
@@ -87,30 +119,30 @@
             </ul>
           </section>
         </div>
-      <footer>
-        Copyright © 2010-2012 <a href="http://bill-ingram.com/">Bill Ingram</a>
-      </footer>
+        <footer>
+          Copyright © 2010-2012 <a href="http://bill-ingram.com/">Bill Ingram</a>
+        </footer>
+      </div>
     </div>
-
     <!-- JavaScript at the bottom for fast page loading -->
 
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
 
-      <!-- scripts concatenated and minified via build script -->
-      <script src="js/plugins.js"></script>
-      <script src="js/script.js"></script>
-      <!-- end scripts -->
+    <!-- scripts concatenated and minified via build script -->
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+    <!-- end scripts -->
 
-      <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-           mathiasbynens.be/notes/async-analytics-snippet -->
-      <script>
-        var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-        (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-        s.parentNode.insertBefore(g,s)}(document,'script'));
-      </script>
+    <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
+         mathiasbynens.be/notes/async-analytics-snippet -->
+    <script>
+      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+      s.parentNode.insertBefore(g,s)}(document,'script'));
+    </script>
   </body>
 </html>
 
