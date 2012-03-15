@@ -312,10 +312,8 @@ blockquote {
 
 /* Specific styles */
 header.main h1 {  
-    font-family: "neuropol-nova", sans-serif;
     font-size: 80px;
     color: #032447;
-    line-height: 1.1;
     margin-bottom: 10px;
 }
 header.main h1 a {
@@ -323,15 +321,20 @@ header.main h1 a {
 }
 
 header.main h2 {
-    font-family: "neuropol-nova", sans-serif;
     font-size: 22px;
     color: #032447;
 }
 
 header.main h3 {
-    font-family: "neuropol-nova", sans-serif;
     font-size: 15px;
     color: #6D2703;
+}
+
+header.main h1,
+header.main h2,
+header.main h3 {
+    font-family: "orbitron", sans-serif;
+    font-variant: small-caps;
 }
 
 nav.main {
