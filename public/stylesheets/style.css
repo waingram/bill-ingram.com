@@ -407,7 +407,7 @@ article.post pre {
     background: #efefef;
     overflow-x: scroll;
 }
-code {
+p code {
   border: 1px solid #032447;
   padding-left: 0.3em;
   padding-right: 0.3em; 
