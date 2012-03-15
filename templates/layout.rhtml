@@ -47,9 +47,9 @@
         site.</p><![endif]-->
     <div class="page">
       <header class="main">
-        <h1><a href="http://bill-ingram.com">Bill Ingram</a></h1>
-        <h2>Software Developer | Web Designer | Librarian</h2>
-        <h3>Technical lead for scholarly communication and repository services at the University of Illinois at Urbana-Champaign</h3>
+        <h1><a href="http://bill-ingram.com">BILL INGRAM</a></h1>
+        <h2>SOFTWARE DEVELOPER | WEB DESIGNER | LIBRARIAN</h2>
+        <h3>TECHNICAL LEAD FOR SCHOLARLY COMMUNICATION AND REPOSITORY SERVICES AT THE UNIVERSITY OF ILLINOIS AT URBANA-CHAMPAIGN</h3>
       </header>
       <nav class="main">
         <ul id="nav">
@@ -63,6 +63,9 @@
           <%= yield %> 
         </div>
         <div id="side">
+          <!-- Place this tag where you want the +1 button to render -->
+          <div class="g-plusone" data-annotation="inline" data-width=""></div>
+
           <section class="bio">
             <img src="http://www.gravatar.com/avatar/d72e758af6c2511728d5d78848774404.png?s=80"
                  alt="Bill Ingram"/>
@@ -92,17 +95,6 @@
               <li><a href="https://plus.google.com/112120275257508476932/">Google+</a></li>
               <li><a href="http://twitter.com/#!/sudobear">Twitter</a></li>
             </ul>
-            <!-- Place this tag where you want the +1 button to render -->
-            <div class="g-plusone" data-annotation="inline" data-width=""></div>
-
-            <!-- Place this render call where appropriate -->
-            <script type="text/javascript">
-              (function() {
-              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-              po.src = 'https://apis.google.com/js/plusone.js';
-              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-              })();
-            </script>
           </section>
         </div>
         <footer>
@@ -111,6 +103,15 @@
       </div>
     </div>
     <!-- JavaScript at the bottom for fast page loading -->
+
+    <!-- Place this render call where appropriate -->
+    <script type="text/javascript">
+      (function() {
+      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+      po.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
 
     <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
