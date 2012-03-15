@@ -347,11 +347,11 @@ nav.main {
 
 nav.main a {
     text-decoration: none; 
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(254,87,161,0.5);
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
     border-radius:3px;
-    padding: 15px; 
+    padding: 10px; 
 }
 
 nav.main a:hover {
@@ -372,7 +372,8 @@ article.post {
 article.post header {
     margin-bottom: 1em;  
 }
-article.post header h1 {
+article.post header h1,
+div#main h1 {
     font-family: "orbitron-n3","orbitron",sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -465,11 +466,11 @@ div#side section.bio img {
 }
 
 footer {
-    color: silver;
+    color: #fe57a1;
     font-size: 90%;  
 }
 footer a, footer a:visited, footer a:active {
-    color: silver;  
+    color: #fe57a1;  
 }
 
 body.blog #main h2 {
