@@ -1,10 +1,10 @@
 <!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if lt IE 7]> <html itemscope itemtype="http://schema.org/Blog" class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html itemscope itemtype="http://schema.org/Blog" class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html itemscope itemtype="http://schema.org/Blog" class="no-js lt-ie9" lang="en"> <![endif]-->
 <!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html itemscope itemtype="http://schema.org/Blog" class="no-js" lang="en"> <!--<![endif]-->
   <head>
     <meta charset="utf-8">
 
@@ -92,6 +92,17 @@
               <li><a href="https://plus.google.com/112120275257508476932/">Google+</a></li>
               <li><a href="http://twitter.com/#!/sudobear">Twitter</a></li>
             </ul>
+            <!-- Place this tag where you want the +1 button to render -->
+            <div class="g-plusone" data-annotation="inline" data-width=""></div>
+
+            <!-- Place this render call where appropriate -->
+            <script type="text/javascript">
+              (function() {
+              var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+              po.src = 'https://apis.google.com/js/plusone.js';
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+              })();
+            </script>
           </section>
         </div>
         <footer>
@@ -113,7 +124,7 @@
     <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
          mathiasbynens.be/notes/async-analytics-snippet -->
     <script>
-      var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+      var _gaq=[['_setAccount','UA-10899813-1'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
       g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
       s.parentNode.insertBefore(g,s)}(document,'script'));
