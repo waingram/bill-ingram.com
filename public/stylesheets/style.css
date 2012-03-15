@@ -311,14 +311,27 @@ blockquote {
 }
 
 /* Specific styles */
-header.main h1 {
-    font-weight: 300;
-    font-size: 400%;
-    margin-bottom: 0;  
+header.main h1 {  
     font-family: "neuropol-nova", sans-serif;
+    font-size: 80px;
+    color: #032447;
+    line-height: 1.1;
+    margin-bottom: 10px;
 }
 header.main h1 a {
     text-decoration: none;
+}
+
+header.main h2 {
+    font-family: "neuropol-nova", sans-serif;
+    font-size: 22px;
+    color: #032447;
+}
+
+header.main h3 {
+    font-family: "neuropol-nova", sans-serif;
+    font-size: 15px;
+    color: #6D2703;
 }
 
 nav.main {
