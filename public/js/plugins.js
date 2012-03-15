@@ -11,7 +11,7 @@ window.log = function f(){ log.history = log.history || []; log.history.push(arg
 
 /*
  * jQuery Backstretch
- * Version 1.2.5
+ * Version 1.2.6
  * http://srobbin.com/jquery-plugins/jquery-backstretch/
  *
  * Add a dynamically-resized background image to the page
@@ -19,4 +19,11 @@ window.log = function f(){ log.history = log.history || []; log.history.push(arg
  * Copyright (c) 2011 Scott Robbin (srobbin.com)
  * Dual licensed under the MIT and GPL licenses.
 */
-(function(a){a.backstretch=function(l,b,j){function m(c){try{h={left:0,top:0},e=f.width(),d=e/k,d>=f.height()?(i=(d-f.height())/2,g.centeredY&&a.extend(h,{top:"-"+i+"px"})):(d=f.height(),e=d*k,i=(e-f.width())/2,g.centeredX&&a.extend(h,{left:"-"+i+"px"})),a("#backstretch, #backstretch img:not(.deleteable)").width(e).height(d).filter("img").css(h)}catch(b){}"function"==typeof c&&c()}var n={centeredX:!0,centeredY:!0,speed:0},c=a("#backstretch"),g=c.data("settings")||n;c.data("settings");var f="onorientationchange"in window?a(document):a(window),k,e,d,i,h;b&&"object"==typeof b&&a.extend(g,b);b&&"function"==typeof b&&(j=b);a(document).ready(function(){if(l){var b;0==c.length?c=a("<div />").attr("id","backstretch").css({left:0,top:0,position:"fixed",overflow:"hidden",zIndex:-999999,margin:0,padding:0,height:"100%",width:"100%"}):c.find("img").addClass("deleteable");b=a("<img />").css({position:"absolute",display:"none",margin:0,padding:0,border:"none",zIndex:-999999}).bind("load",function(b){var d=a(this),e;d.css({width:"auto",height:"auto"});e=this.width||a(b.target).width();b=this.height||a(b.target).height();k=e/b;m(function(){d.fadeIn(g.speed,function(){c.find(".deleteable").remove();"function"==typeof j&&j()})})}).appendTo(c);0==a("body #backstretch").length&&a("body").append(c);c.data("settings",g);b.attr("src",l);a(window).resize(m)}});return this}})(jQuery);
+;(function($){$.backstretch=function(src,options,callback){var defaultSettings={centeredX:true,centeredY:true,speed:0},container=$("#backstretch"),settings=container.data("settings")||defaultSettings,existingSettings=container.data('settings'),rootElement=(_supportsFixed())?$(window):$(document),imgRatio,bgImg,bgWidth,bgHeight,bgOffset,bgCSS;if(options&&typeof options=="object")$.extend(settings,options);if(options&&typeof options=="function")callback=options;$(document).ready(_init);return this;function _supportsFixed(){var top=10,$div=$("<div />").css({position:"fixed",top:top}).appendTo("body"),isSupported=$div.offset().top==top;$div.remove();return isSupported;}
+function _init(){if(src){var img;if(container.length==0){container=$("<div />").attr("id","backstretch").css({left:0,top:0,position:"fixed",overflow:"hidden",zIndex:-999999,margin:0,padding:0,height:"100%",width:"100%"});}else{container.find("img").addClass("deleteable");}
+img=$("<img />").css({position:"absolute",display:"none",margin:0,padding:0,border:"none",zIndex:-999999}).bind("load",function(e){var self=$(this),imgWidth,imgHeight;self.css({width:"auto",height:"auto"});imgWidth=this.width||$(e.target).width();imgHeight=this.height||$(e.target).height();imgRatio=imgWidth/imgHeight;_adjustBG(function(){self.fadeIn(settings.speed,function(){container.find('.deleteable').remove();if(typeof callback=="function")callback();});});}).appendTo(container);if($("body #backstretch").length==0){$("body").append(container);}
+container.data("settings",settings);img.attr("src",src);$(window).resize(_adjustBG);}}
+function _adjustBG(fn){try{bgCSS={left:0,top:0}
+bgWidth=rootElement.width();bgHeight=bgWidth/imgRatio;if(bgHeight>=rootElement.height()){bgOffset=(bgHeight-rootElement.height())/2;if(settings.centeredY)$.extend(bgCSS,{top:"-"+bgOffset+"px"});}else{bgHeight=rootElement.height();bgWidth=bgHeight*imgRatio;bgOffset=(bgWidth-rootElement.width())/2;if(settings.centeredX)$.extend(bgCSS,{left:"-"+bgOffset+"px"});}
+container.find("img:not(.deleteable)").width(bgWidth).height(bgHeight).filter("img").css(bgCSS);}catch(err){}
+if(typeof fn=="function")fn();}};})(jQuery);

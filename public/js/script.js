@@ -2,7 +2,7 @@
 
 
 */
-$.backstretch("../images/waingram.jpg");
+$.backstretch("../images/waingram.jpg", {speed: 150});
 
 
 

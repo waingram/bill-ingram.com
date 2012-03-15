@@ -218,10 +218,6 @@ td { vertical-align: top; }
    Author: Bill Ingram <waingram@gmail.com>
    ========================================================================== */
 
-html,body{
-    width:100%;
-    height:100%;
-} 
 
 body {
     font-family: Tahoma,Helvetica,Verdana,sans-serif;
@@ -329,7 +325,12 @@ nav.main {
     margin-top: 0.6em;  
 }
 nav.main a {
-    text-decoration: none;  
+    text-decoration: none; 
+    background-color: rgba(255,255,255,0.8);
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    border-radius:3px;
+    padding: 15px; 
 }
 nav.main a:hover {
     text-decoration: underline;  
@@ -621,6 +622,7 @@ body.contact form input, body.contact form textarea {
    ========================================================================== */
 
 @media print {
+    #backstretch { display: none;
   * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
