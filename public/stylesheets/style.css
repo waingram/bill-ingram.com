@@ -222,7 +222,7 @@ td { vertical-align: top; }
 body {
     font-family: Tahoma,Helvetica,Verdana,sans-serif;
     font-size: 120%;
-    color: #333;
+    color: #032447;
     background: white;
     text-rendering: optimizeLegibility; 
 }
@@ -338,7 +338,10 @@ header.main h3 {
     font-weight: 300;
 }
 
-nav.main {
+nav.main {  
+    font-family: "orbitron-n3","orbitron",sans-serif;
+    font-style: normal;
+    font-weight: 300;
     margin-top: 0.6em;  
 }
 
@@ -370,8 +373,10 @@ article.post header {
     margin-bottom: 1em;  
 }
 article.post header h1 {
-    font-size: 140%;
-    font-weight: normal;
+    font-family: "orbitron-n3","orbitron",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
     line-height: 1;
     margin-bottom: 0;
 }
@@ -403,7 +408,7 @@ article.post pre {
     overflow-x: scroll;
 }
 code {
-  border: 1px solid #efefef;
+  border: 1px solid #032447;
   padding-left: 0.3em;
   padding-right: 0.3em; 
 }
@@ -438,7 +443,14 @@ div#side {
     line-height: 1.4;
  }
 div#side section h1 {
-    margin-bottom: 0.2em;  
+    font-family: "orbitron-n3","orbitron",sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    font-weight: normal;
+    color: #fe57a1;
+    line-height: 1;
+    margin-bottom: 0; 
 }
 div#side section ul, div#side section ol {
     list-style-type: none;  
