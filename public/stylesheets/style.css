@@ -316,13 +316,18 @@ header.main h1 {
     color: #032447;
     margin-bottom: 10px;
 }
-header.main h1 a {
+header.main h1 a,
+header.main h1 a:hover,
+header.main h1 a:active,
+header.main h1 a:visited {
     text-decoration: none;
+    color: #0324447;
 }
 
 header.main h2 {
     font-size: 22px;
     color: #032447;
+    margin: 0;
 }
 
 header.main h3 {
