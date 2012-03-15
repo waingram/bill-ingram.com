@@ -333,8 +333,9 @@ header.main h3 {
 header.main h1,
 header.main h2,
 header.main h3 {
-    font-family: "orbitron", sans-serif;
-    font-variant: small-caps;
+    font-family: "orbitron-n3","orbitron",sans-serif;
+    font-style: normal;
+    font-weight: 300;
 }
 
 nav.main {
