@@ -235,7 +235,7 @@ div.page {
 
 header.main {
     float: left;
-    width: 75%;
+    width: 67%;
     margin: 0 0 2em 0;  
 }
 
@@ -297,12 +297,6 @@ ul {
     list-style-type: square;  
 }
 
-h1 {
-    font-size: 120%;
-    font-weight: normal;
-    margin-bottom: 1em;  
-}
-
 blockquote {
     margin: 0 2em;
     padding-left: 0.5em;
@@ -316,12 +310,13 @@ header.main h1 {
     color: #032447;
     margin-bottom: 10px;
 }
+
 header.main h1 a,
 header.main h1 a:hover,
 header.main h1 a:active,
 header.main h1 a:visited {
-    text-decoration: none !important;
-    color: #0324447 !important;
+    text-decoration: none;
+    color: #032447;
 }
 
 header.main h2 {
@@ -346,14 +341,16 @@ header.main h3 {
 nav.main {
     margin-top: 0.6em;  
 }
+
 nav.main a {
     text-decoration: none; 
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.5);
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
     border-radius:3px;
     padding: 15px; 
 }
+
 nav.main a:hover {
     text-decoration: underline;  
 }
@@ -374,6 +371,7 @@ article.post header {
 }
 article.post header h1 {
     font-size: 140%;
+    font-weight: normal;
     line-height: 1;
     margin-bottom: 0;
 }
