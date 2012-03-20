@@ -1,5 +1,10 @@
 
 require 'toto'
+require 'hpricot'
+require 'httparty'
+require File.join(File.dirname(__FILE__), 'lib', 'helpers')
+
+Toto::Site::Context.send(:include, Helpers)
 
 # Rack config
 use Rack::Static, :urls => ['/stylesheets', '/javascripts', '/images', '/favicon.ico', '/humans.txt', '/404.html'], :root => 'public'

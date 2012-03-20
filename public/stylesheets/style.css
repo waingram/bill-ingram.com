@@ -356,7 +356,7 @@ nav.main {
 
 nav.main a {
     text-decoration: none; 
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.9);
     /* background-color: rgba(254,87,161,0.7); */
     -moz-border-radius:3px;
     -webkit-border-radius:3px;
@@ -369,7 +369,7 @@ nav.main a:hover {
 }
 
 div#main, div#side {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.9);
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
     border-radius:5px;
@@ -413,16 +413,32 @@ article.post .date a {
 article.post .date a:hover {
     text-decoration: underline;  
 }
+article.post .highlight {
+    vertical-align: top;
+    padding: 2px 4px;
+    color: #100;
+    background-color: #F9F9F9;
+    border: 1px solid silver;
+    margin: 0 1.5em 1.5em 0;
+    overflow: auto;
+}
 article.post pre {
-    padding: 1em;
-    background: #efefef;
+    margin: 0;
+    width: auto;
+    float: none;
+    clear: none;
+    font-size: 12px;
+    line-height: 1.333;
+    white-space: pre;
     overflow-x: scroll;
 }
 p code {
-  border: 1px solid #032447;
-  padding-left: 0.3em;
-  padding-right: 0.3em; 
+    border: 1px solid silver;
+    padding-left: 0.3em;
+    padding-right: 0.3em; 
 }
+
+
 
 /* Fancy webkit-only scrollbars */  
 
@@ -508,7 +524,7 @@ body.blog #main ol.articles li span.month {
     display:  block;
     float:    left;
     color:    #fe57a1;
-    font-family: Menlo, Consolas, Monaco, monospace;
+    font-family: "Monaco", "Anonymous Pro", "Bitstream Vera Sans", Courier, mono;
     font-size: 0.8em;
     line-height: 2.1em;  
 }

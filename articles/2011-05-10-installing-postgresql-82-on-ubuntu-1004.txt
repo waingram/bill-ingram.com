@@ -3,17 +3,17 @@ date: 10/05/2011
 author: Bill Ingram
 
 First, add the Hardy repositories to apt-get sources. If this file does not already exist, create it.
-
+    @@bash   
     sudo vim /etc/apt/sources.list.d/hardy.list
 
 Add the Hardy repos.
-
+    @@bash
     deb http://us.archive.ubuntu.com/ubuntu/ hardy universe
     deb http://us.archive.ubuntu.com/ubuntu/ hardy-updates universe
     deb http://us.archive.ubuntu.com/ubuntu/ hardy-security universe
 
 Update apt-get, and install.
- 
+    @@bash
     sudo apt-get update
     sudo apt-get install postgres-8.2
       Reading package lists... Done
@@ -34,13 +34,13 @@ That's not good. It turns out `libkrb53` has been replaced by `libkrb5-3` in Ubu
 Here's the fix (see [Bug #462059](https://bugs.launchpad.net/ubuntu/+source/root-system/+bug/462059 "Bug #462059")). Use equivs to generate a fake transitional `libkrb53` package.
 
 Create a dummy file called `libkrb.txt`, with this text:
-
+    @@bash
     Package: libkrb53
     Version: 1.6.dfsg.2+fake1
     Depends: libkrb5-3, libgssapi-krb5-2, libk5crypto3, libkrb5support0
 
 Run `equivs-build` on the dummy file. (You may have to `sudo apt-get install equivs` first.)
-
+    @@bash
     sudo equivs-build krb.txt
 
 This will generate the file `libkrb53_1.6.dfsg.2+fake1_all.deb`. Install the resulting .deb.
