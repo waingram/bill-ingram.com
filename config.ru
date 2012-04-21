@@ -32,14 +32,20 @@ toto = Toto::Server.new do
   # set :ext,       'txt'                                     # file extension for articles
   # set :cache,      28800                                    # cache duration, in seconds
 
-  set :date,   lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
-  set :author, "Bill Ingram"
-  set :title,  "Bill Ingram"
-  set :ext,    'md'	
-  set :error,  lambda { |code|
-    code = 500 unless [400, 404, 500].include? code.to_i
+  set :author,      "Bill Ingram"
+  set :title,       "Bill Ingram"
+  set :root,        "index"
+  set :date,        lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
+  set :markdown,    :smart
+  set :disqus,      false
+  set :summary,     :max => 150, :delim => /~/
+  set :ext,         'md'	
+  set :cache,       28800
+  set :error,       lambda { |code|
+    code             = 500 unless [400, 404, 500].include? code.to_i
     IO.read "public/#{code}.html"
   }
+
   
 end
 
