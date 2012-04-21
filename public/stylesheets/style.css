@@ -269,7 +269,7 @@ section.content {
 	display: inline;
 	float: right;
 	width: 700px;
-	margin: 0 54px;
+	margin: 0 54px 0 0;
 }
 
 article {
