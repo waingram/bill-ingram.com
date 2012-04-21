@@ -35,7 +35,15 @@ toto = Toto::Server.new do
   set :date,   lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
   set :author, "Bill Ingram"
   set :title,  "Bill Ingram"
-	set :ext,		 'md'	
+  set :ext,		 'md'	
+
+  set :to_html   do |path, page, ctx|                         # returns an html, from a path & context
+	  ERB.new(File.read("#{path}/#{page}.rhtml")).result(ctx)
+	end
+
+	set :error     do |code|                                    # The HTML for your error page
+	  File.read("/404.html")
+	end
   
 end
 
