@@ -1,4 +1,3 @@
---- 
 title: Batch Change File Extensions 
 date: 20/04/2012
 author: Bill Ingram

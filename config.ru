@@ -7,7 +7,7 @@ require File.join(File.dirname(__FILE__), 'lib', 'helpers')
 Toto::Site::Context.send(:include, Helpers)
 
 # Rack config
-use Rack::Static, :urls => ['/stylesheets', '/javascripts', '/images', '/favicon.ico', '/humans.txt', '/404.html'], :root => 'public'
+use Rack::Static, :urls => ['/stylesheets', '/javascripts', '/images', '/favicon.ico', '/humans.txt', '/404.html', '/sitemap.xml'], :root => 'public'
 use Rack::CommonLogger
 
 if ENV['RACK_ENV'] == 'development'
@@ -35,15 +35,11 @@ toto = Toto::Server.new do
   set :date,   lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
   set :author, "Bill Ingram"
   set :title,  "Bill Ingram"
-  set :ext,		 'md'	
-
-  set :to_html   do |path, page, ctx|                         # returns an html, from a path & context
-	  ERB.new(File.read("#{path}/#{page}.rhtml")).result(ctx)
-	end
-
-	set :error     do |code|                                    # The HTML for your error page
-	  File.read("/404.html")
-	end
+  set :ext,    'md'	
+  set :error,  lambda { |code|
+    code = 500 unless [400, 404, 500].include? code.to_i
+    IO.read "public/#{code}.html"
+  }
   
 end
 

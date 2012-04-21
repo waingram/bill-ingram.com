@@ -3,6 +3,7 @@ require 'toto'
 BLOG_URL = "http://bill-ingram.com/"
 
 @config = Toto::Config::Defaults
+@config[:ext] = 'md'
 
 task :default => :new
 
@@ -36,7 +37,7 @@ end
 desc "Rebuild sitemap"
 task :sitemap do
   articles = Toto::Site.new(@config).archives.delete(:archives)
-
+  
   xml = Builder::XmlMarkup.new(:indent => 2)
   xml.urlset "xmlns" => "http://www.sitemaps.org/schemas/sitemap/0.9" do
     xml.url do
