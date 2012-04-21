@@ -303,6 +303,12 @@ section.copyright {
 	width: 228px; /*243px */
 	margin: 9px 0 0 18px;	
 }
+
+article section p,
+article section pre,
+article section table,
+article div.more {margin: 18px 0;}
+
 pre::-webkit-scrollbar, .highlight::-webkit-scrollbar, .gist-highlight::-webkit-scrollbar {
 	height: .5em;
 	background: 
@@ -415,10 +421,6 @@ aside ul li.active a:visited {font-weight: bold; color: black;}
 
 section.org h2 { font-weight: normal;}
 section.org h2 a:link, section.org h2 a:hover, section.org h2 a:visited {color:black; }
-
-article section p,
-article section pre,
-article section table {margin: 18px 0;}
 
 blockquote.twitter-tweet {
 	background-color: #eee;
