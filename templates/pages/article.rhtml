@@ -1,10 +1,10 @@
-<article class="post">
+<article class="full">
   <header>
-    <h1><%= title %></h1>
+    <h3><%= title %></h3>
     <span class="date"><%= date %></span>
   </header>
 
-  <section class="content">
+  <section class="article">
     <%= colorize(body) %>
   </section>
 
@@ -16,5 +16,9 @@
       <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
     <% end %>
   </section>
+
+	<section class="arrow">
+		<a class="up" href="#top">↑</a>
+	</section>
 </article>
 

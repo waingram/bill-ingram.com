@@ -1,12 +1,12 @@
 <section id="articles">
-  <% for article in articles[0...5] %>
+  <% for article in articles[0...20] %>
     <article class="post">
       <header>
-        <h1><a href="<%= article.path %>"><%= article.title %></a></h1>
+        <h3><a href="<%= article.path %>"><%= article.title %></a></h3>
         <span class="date"><%= article.date %></span>
       </header>
 
-      <section class="content">
+      <section class="article">
         <%= colorize(article.summary) %>
       </section>
       <div class="more"><a href="<%= article.path %>">read on &raquo;</a></div>
