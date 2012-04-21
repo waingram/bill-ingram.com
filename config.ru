@@ -34,7 +34,8 @@ toto = Toto::Server.new do
 
   set :date,   lambda {|now| now.strftime("%B #{now.day.ordinal} %Y") }
   set :author, "Bill Ingram"
-  set :title,  "bill-ingram.com"
+  set :title,  "Bill Ingram"
+	set :ext,		 'md'	
   
 end
 
