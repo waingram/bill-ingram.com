@@ -1,15 +1,53 @@
-<article class="full">
-  <header>
-    <h3><%= title %></h3>
-    <span class="date"><%= date %></span>
-  </header>
-
-  <section class="article">
-    <%= colorize(body) %>
-  </section>
-
-	<section class="arrow">
-		<a class="up" href="#top">&uarr;</a>
+<article class="single">
+	<header>
+    <h3 class="entry-title"><%= title %></h3>
+    <p class="entry-meta"><%= date %></p>
+	</header>
+	<section class="entry-content">
+		<%= colorize(body) %>
 	</section>
-</article>
+	<footer>
+	  <div class="socialUtils wrapper clearfix">
+	    <div>
+	      <a href="https://twitter.com/share" class="twitter-share-button" data-url="<%= url %>"
+	      data-via="sudobear">Tweet</a>
+	    </div>
 
+	    <div>
+	      <div class="g-plusone" data-size="medium" data-href="<%= url %>">
+	        g-plusone
+	      </div>
+	    </div>
+
+	    <div>
+	      <iframe src=
+	      "http://www.facebook.com/plugins/like.php?href=<%= url %>&amp;layout=button_count&amp;show_faces=false&amp;width=150&amp;action=like&amp;colorscheme=light&amp;am%20p;height=21"  style="border-style:none;border-width:initial;border-color:initial;border-image:initial;overflow-x:hidden;overflow-y:hidden;width:150px;height:21px;visibilit y: visible;"
+	      allowtransparency="true" d30tagged="1" scrolling="no" frameborder="0">Like</iframe>
+	    </div>
+	  </div>
+		
+		<!-- h3>article footer h3</h3 -->
+		<p class="entry-meta"><a class="up" href="#top"><abbr title="top">&uarr;</abbr></a></p>
+	</footer>	
+	<script xmlns:xhtml="http://www.w3.org/1999/xhtml" type="text/javascript">
+		(function () {
+		  var po = document.createElement('script');
+		  po.type = 'text/javascript';
+		  po.async = true;
+		  po.src = 'https://apis.google.com/js/plusone.js';
+		  var s = document.getElementsByTagName('script')[0];
+		  s.parentNode.insertBefore(po, s);
+	  })();
+	  !function (d, s, id) {
+		  var js,
+		  fjs = d.getElementsByTagName(s)[0];
+		  if (!d.getElementById(id)) {
+		    js = d.createElement(s);
+		    js.id = id;
+		    js.src = "//platform.twitter.com/widgets.js";
+		    fjs.parentNode.insertBefore(js, fjs);
+		  }
+	  }
+	  (document, "script", "twitter-wjs");
+	</script>
+</article>

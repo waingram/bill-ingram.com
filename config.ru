@@ -7,7 +7,7 @@ require File.join(File.dirname(__FILE__), 'lib', 'helpers')
 Toto::Site::Context.send(:include, Helpers)
 
 # Rack config
-use Rack::Static, :urls => ['/stylesheets', '/javascripts', '/images', '/favicon.ico', '/humans.txt', '/404.html', '/sitemap.xml'], :root => 'public'
+use Rack::Static, :urls => ['/css', '/js', '/img', '/favicon.ico', '/humans.txt', '/404.html', '/sitemap.xml', '/robots.txt', '/crossdomain.xml', '/google1153296bcc8b3c5e.html'], :root => 'public'
 use Rack::CommonLogger
 
 if ENV['RACK_ENV'] == 'development'

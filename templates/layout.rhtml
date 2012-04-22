@@ -1,143 +1,144 @@
 <!doctype html>
-<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-<!--[if lt IE 7]> <html itemscope itemtype="http://schema.org/Blog" class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html itemscope itemtype="http://schema.org/Blog" class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html itemscope itemtype="http://schema.org/Blog" class="no-js lt-ie9" lang="en"> <![endif]-->
-<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
-<!--[if gt IE 8]><!--> <html itemscope itemtype="http://schema.org/Blog" class="no-js" lang="en"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <!-- Use the .htaccess and remove these lines to avoid edge case issues.
-         More info: h5bp.com/i/378 -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title><%= title %></title>
 
-    <title><%= title %></title>
-    <meta name="description" content="">
+  <link rel="author" href="/humans.txt" />
+  <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
+  <link rel="canonical" href="http://bill-ingram.com/">
 
-    <!-- Mobile viewport optimized: h5bp.com/viewport -->
-    <meta name="viewport" content="width=device-width">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
+  <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+  <meta itemprop="name" content="Bill Ingram">
+  <meta itemprop="description" content="Bill Ingram Software Developer | Web Designer | Librarian :: Technical lead for scholarly communication and repository services at the University of Illinois at Urbana-Champaign">
+  <meta itemprop="image"
+  content="http://www.gravatar.com/avatar/d72e758af6c2511728d5d78848774404.png">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root
-    directory: mathiasbynens.be/notes/touch-icons -->
-    
-    <!-- Typekit stuff -->
-    <!-- script type="text/javascript" src="http://use.typekit.com/zni4xdb.js"></script>
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script -->
+  <meta name="application-name" content="bill-ingram.com" />
+  <meta name="msapplication-tooltip" content="Software Developer |
+  Web Designer | Librarian" />
 
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-    <link rel="stylesheet" href="/stylesheets/pygments.css" />
+  <meta property="og:title" content="Bill Ingram" />
+  <meta property="og:description" content="Bill Ingram Software Developer | Web Designer | Librarian :: Technical lead for scholarly communication and repository services at the University of Illinois at Urbana-Champaign" />
+  <meta property="og:image" content="http://www.gravatar.com/avatar/d72e758af6c2511728d5d78848774404.png" />
 
-    <link rel="author" href="/humans.txt" />
+	<meta name="viewport" content="width=device-width">
 
-    <link rel="alternate" type="application/atom+xml" title="<%= title %> - feed" href="/index.xml" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> 
-    <!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
-    <meta itemprop="name" content="Bill Ingram">
-    <meta itemprop="description" content="Bill Ingram Software Developer | Web Designer | Librarian :: Technical lead for scholarly communication and repository services at the University of Illinois at Urbana-Champaign">
-    <meta itemprop="image"
-    content="http://www.gravatar.com/avatar/d72e758af6c2511728d5d78848774404.png">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/pygments.css">
 
-    <meta name="application-name" content="bill-ingram.com" />
-    <meta name="msapplication-tooltip" content="Software Developer |
-    Web Designer | Librarian" />
+	<script src="/js/libs/modernizr-2.5.3-respond-1.1.0.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+<div id="page">
+	<div id="header-container">
+		<header class="wrapper" id="branding" role="banner"><nav id="access" role="navigation">
+			<h3 class="assistive-text">Main menu</h3>
+			<div class="skip-link">
+				<a class="assistive-text" href="#main-container" title="Skip to primary content">Skip to primary content</a>
+			</div>
+			<div class="skip-link">
+				<a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a>
+			</div>
+			<div class="menu-menu-container">
+				<ul id="main-menu" class="menu">
+          <li><a title="About" href="/about/">About</a></li>
+          <li><a title="C.V." href="/cv/">C.V.</a></li>
+          <li><a title="Archives" href="/archives/">Archives</a></li>
+				</ul>
+			</div>
+		</nav><!-- #access -->
+			<hgroup class="profile-card">
+				<div class="profile-card-inner js-actionable-user" data-screen-name="sudobear" data-user-id="24393226">
+				    <h1 class="fullname" id="site-title"><span class="icon">&clubs;</span>
+							<a href="http://bill-ingram.com" title="Bill Ingram" rel="home" id="top">Bill Ingram</a>
+				    </h1>
+				    <h2 class="username">
+				      <span class="js-username"><span class="screen-name"><s>@</s>sudobear</span></span>
+				    </h2>
+				    <p id="site-description" class="bio ">Programmer | Web Developer | Librarian</p>
+				    <p class="location-and-url">
+				      <span class="location">
+				        Urbana, IL
+				      </span>
+				          <span class="divider">·</span>
+				      <span class="url">
+				        <a target="_blank" rel="me nofollow" href="http://about.me/waingram">
+				          http://about.me/waingram
+				        </a>
+				      </span>
+				    </p>
+				  </div>
+			</hgroup>
+		</header>
+	</div>
+	<div id="main-container">
+		<div id="main" class="wrapper clearfix">
+			<%= yield %> 
 
-    <meta property="og:title" content="Bill Ingram" />
-    <meta property="og:description" content="Bill Ingram Software Developer | Web Designer | Librarian :: Technical lead for scholarly communication and repository services at the University of Illinois at Urbana-Champaign" />
-    <meta property="og:image" content="http://www.gravatar.com/avatar/d72e758af6c2511728d5d78848774404.png" />
+			
+			<aside id="secondary">
+			<div id="face-group">
+				<a id="follow-link" target="_blank" href="http://twitter.com/#!/sudobear">
+					<img id="face" src="https://si0.twimg.com/profile_images/1239895188/image.jpg" alt="Bill Ingram">
+				</a>	
+				<a href="https://twitter.com/sudobear" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @sudobear</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
-    <!-- All JavaScript at the bottom, except this Modernizr build.
-         Modernizr enables HTML5 elements & feature detects for optimal performance.
-         Create your own custom Modernizr build: www.modernizr.com/download/ -->
-    <script src="/javascripts/libs/modernizr-2.5.3.min.js"></script>
-  </head>
-  <body class="blog">
-    <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
-         chromium.org/developers/how-tos/chrome-frame-getting-started -->
-    <!--[if lt IE 7]><p class=chromeframe>Your browser
-        is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade
-        to a different browser</a>
-        or <a href="http://www.google.com/chromeframe/?redirect=true">install
-        Google Chrome Frame</a> to experience this
-        site.</p><![endif]-->	
-		<header class="main">
-			<section class="org">
-				<h1>
-					<a name="top" title="Main Index" href="Bill Ingram">
-						Bill Ingram<br/>
-						&mdash; Home<br/> 
-					</a>
-				</h1>
-			</section>
-		</header>	
-    <section class="page">
- 	    <section class="content">
-	      <%= yield %> 
-	    </section>
-		 	<aside>
-	      <section class="site">
-	        <h3>Site</h3>
-	        <nav><ul>
-	          <li><a href="/about/">About</a></li>
-	          <li><a href="https://github.com/waingram">C.V.</a></li>
-	          <li><a href="/archives/">Archives</a></li>
-	        </ul></nav>
-	      </section>
-	      <section class="apps">
-	        <h3>Projects</h3>
-	        <nav><ul>
-	          <li><a href="http://www.ideals.illinois.edu/">IDEALS</a></li>
-	          <li><a href="http://etd.ideals.illinois.edu/">Vireo</a></li>
-	          <li><a href="http://connections.ideals.illinois.edu/">BibApp</a></li>
-	          <li><a href="https://wiki.cites.uiuc.edu/wiki/display/~wingram2">Medusa</a></li>
-	        </ul></nav>
-	      </section>
-	      <section class="social">
-	        <h3>Social</h3>
-	        <nav><ul>
-	          <li><a href="https://github.com/waingram">GitHub</a></li>
-	          <li><a href="http://www.linkedin.com/in/waingram">LinkedIn</a></li>
-	          <li><a href="http://www.flickr.com/people/billingram/">Flickr</a></li>
-	          <li><a href="https://plus.google.com/112120275257508476932/">Google+</a></li>
-	          <li><a href="http://twitter.com/#!/sudobear">Twitter</a></li>
-	        </ul></nav>
-	      </section>
-	    </aside>
-    </section>
-    <footer>
-			<section class="copyright">
-      	Copyright © 2010-2012 <a href="http://bill-ingram.com/">Bill Ingram</a>
-			</section>
-    </footer>
-    <!-- JavaScript at the bottom for fast page loading -->
+			</div>
+				<div id="follow-group">
+		      <div class="apps">
+		        <h3>Projects</h3>
+		        <ul>
+		          <li><a href="http://www.ideals.illinois.edu/">IDEALS</a></li>
+		          <li><a href="http://etd.ideals.illinois.edu/">Vireo</a></li>
+		          <li><a href="http://connections.ideals.illinois.edu/">BibApp</a></li>
+		          <li><a href="https://wiki.cites.uiuc.edu/wiki/display/~wingram2">Medusa</a></li>
+		        </ul>
+		      </div>	
+		      <div class="social">
+		        <h3>Social</h3>
+		        <ul>
+		          <li><a href="https://github.com/waingram">GitHub</a></li>
+		          <li><a href="http://www.linkedin.com/in/waingram">LinkedIn</a></li>
+		          <li><a href="http://www.flickr.com/people/billingram/">Flickr</a></li>
+		          <li><a href="https://plus.google.com/112120275257508476932/">Google+</a></li>
+		          <li><a href="http://twitter.com/#!/sudobear">Twitter</a></li>
+		        </ul>
+		      </div>
+				</div>
+			</aside>
+			
+		</div> <!-- #main -->
+	</div> <!-- #main-container -->
 
-    <!-- Place this render call where appropriate -->
-    <script type="text/javascript">
-      (function() {
-      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-      po.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-      })();
-    </script>
+	<div id="footer-container">
+		<footer class="wrapper">
+			<p>Copyright © 2010-2012 <a href="http://bill-ingram.com/">Bill Ingram</a></p>
+		</footer>
+	</div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 
-    <!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if offline -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="/javascripts/libs/jquery-1.7.1.min.js"><\/script>')</script>
+<!-- scripts concatenated and minified via ant build script-->
+<script src="/js/plugins.js"></script>
+<script src="/js/script.js"></script>
+<!-- end scripts-->
 
-    <!-- scripts concatenated and minified via build script -->
-    <script src="/javascripts/plugins.js"></script>
-    <script src="/javascripts/script.js"></script>
-    <!-- end scripts -->
+<script>
+	var _gaq=[['_setAccount','UA-10899813-1'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 
-    <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-         mathiasbynens.be/notes/async-analytics-snippet -->
-    <script>
-      var _gaq=[['_setAccount','UA-10899813-1'],['_trackPageview']];
-      (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-      g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-      s.parentNode.insertBefore(g,s)}(document,'script'));
-    </script>
-  </body>
+</body>
 </html>
-
-

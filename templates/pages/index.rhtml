@@ -1,18 +1,17 @@
-<section id="articles">
-  <% for article in articles[0...20] %>
-    <article class="post">
-      <header>
-        <h3><a href="<%= article.path %>"><%= article.title %></a></h3>
-        <span class="date"><%= article.date %></span>
-      </header>
-
-      <section class="article">
-        <%= colorize(article.summary) %>
-      </section>
-      <div class="more"><a href="<%= article.path %>">read on &raquo;</a></div>
-    </article>
-  <% end %>
-  <p><strong><a href="/archives">Archives</a></strong></p>
-</section>
-
-
+<article>
+<% for article in articles[0...20] %>
+<section>
+	<header>
+    <h3 class="entry-title"><a href="<%= article.path %>"><%= article.title %></a></h3>
+    <p class="entry-meta"><%= article.date %></p>
+	</header>
+	<section class="entry-content">
+		<%= colorize(article.summary) %>
+	</section>
+	<footer>
+		<!-- h3>article footer h3</h3 -->
+		<p class="entry-meta"><a href="<%= article.path %>">read on &raquo;</a></p>
+	</footer>
+</section>	
+<% end %>
+</article>
