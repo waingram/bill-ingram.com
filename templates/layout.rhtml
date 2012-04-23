@@ -37,9 +37,25 @@
 </head>
 <body>
 <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
-<div id="page">
-	<div id="header-container">
-		<header class="wrapper" id="branding" role="banner"><nav id="access" role="navigation">
+<div id="header-container">
+	<div id="header-wrapper" class="wrapper">
+		<header role="banner">
+			<div id="face-group">
+				<a id="follow-link" target="_blank" href="http://twitter.com/#!/sudobear">
+					<img id="face" src="https://si0.twimg.com/profile_images/1239895188/image.jpg" alt="Bill Ingram">
+				</a>	
+				<a href="https://twitter.com/sudobear" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @sudobear</a>
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+			</div>
+			<a href="http://bill-ingram.com" title="bill-ingram.com" rel="home" id="bill-ingram">
+				<hgroup>
+			    <h1 id="site-title">bill-ingram.com</h1>
+			    <h2 id="site-description">Software Development for Libraries</h2>
+				</hgroup>
+			</a>
+		</header>
+		<nav id="access" role="navigation">
 			<h3 class="assistive-text">Main menu</h3>
 			<div class="skip-link">
 				<a class="assistive-text" href="#main-container" title="Skip to primary content">Skip to primary content</a>
@@ -49,82 +65,50 @@
 			</div>
 			<div class="menu-menu-container">
 				<ul id="main-menu" class="menu">
-          <li><a title="About" href="/about/">About</a></li>
-          <li><a title="C.V." href="/cv/">C.V.</a></li>
-          <li><a title="Archives" href="/archives/">Archives</a></li>
+	         <li><a title="About" href="/about/">About</a></li>
+	         <li><a title="CV" href="/cv/">CV</a></li>
+	         <li><a title="Archives" href="/archives/">Archives</a></li>
 				</ul>
 			</div>
-		</nav><!-- #access -->
-			<hgroup class="profile-card">
-				<div class="profile-card-inner js-actionable-user" data-screen-name="sudobear" data-user-id="24393226">
-				    <h1 class="fullname" id="site-title"><span class="icon">&clubs;</span>
-							<a href="http://bill-ingram.com" title="Bill Ingram" rel="home" id="top">Bill Ingram</a>
-				    </h1>
-				    <h2 class="username">
-				      <span class="js-username"><span class="screen-name"><s>@</s>sudobear</span></span>
-				    </h2>
-				    <p id="site-description" class="bio ">Programmer | Web Developer | Librarian</p>
-				    <p class="location-and-url">
-				      <span class="location">
-				        Urbana, IL
-				      </span>
-				          <span class="divider">·</span>
-				      <span class="url">
-				        <a target="_blank" rel="me nofollow" href="http://about.me/waingram">
-				          http://about.me/waingram
-				        </a>
-				      </span>
-				    </p>
-				  </div>
-			</hgroup>
-		</header>
-	</div>
-	<div id="main-container">
-		<div id="main" class="wrapper clearfix">
-			<%= yield %> 
-
-			
-			<aside id="secondary">
-			<div id="face-group">
-				<a id="follow-link" target="_blank" href="http://twitter.com/#!/sudobear">
-					<img id="face" src="https://si0.twimg.com/profile_images/1239895188/image.jpg" alt="Bill Ingram">
-				</a>	
-				<a href="https://twitter.com/sudobear" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @sudobear</a>
-				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-			</div>
-				<div id="follow-group">
-		      <div class="apps">
-		        <h3>Projects</h3>
-		        <ul>
-		          <li><a href="http://www.ideals.illinois.edu/">IDEALS</a></li>
-		          <li><a href="http://etd.ideals.illinois.edu/">Vireo</a></li>
-		          <li><a href="http://connections.ideals.illinois.edu/">BibApp</a></li>
-		          <li><a href="https://wiki.cites.uiuc.edu/wiki/display/~wingram2">Medusa</a></li>
-		        </ul>
-		      </div>	
-		      <div class="social">
-		        <h3>Social</h3>
-		        <ul>
-		          <li><a href="https://github.com/waingram">GitHub</a></li>
-		          <li><a href="http://www.linkedin.com/in/waingram">LinkedIn</a></li>
-		          <li><a href="http://www.flickr.com/people/billingram/">Flickr</a></li>
-		          <li><a href="https://plus.google.com/112120275257508476932/">Google+</a></li>
-		          <li><a href="http://twitter.com/#!/sudobear">Twitter</a></li>
-		        </ul>
-		      </div>
-				</div>
-			</aside>
-			
-		</div> <!-- #main -->
-	</div> <!-- #main-container -->
-
-	<div id="footer-container">
-		<footer class="wrapper">
-			<p>Copyright © 2010-2012 <a href="http://bill-ingram.com/">Bill Ingram</a></p>
-		</footer>
+		</nav>
 	</div>
 </div>
+<div id="main-container">
+	<div id="main" class="wrapper clearfix">
+		<%= yield %> 
+
+		
+		<aside id="secondary">
+	    <div class="apps">
+        <h3>Projects</h3>
+        <ul>
+          <li><a href="http://www.ideals.illinois.edu/">IDEALS</a></li>
+          <li><a href="http://etd.ideals.illinois.edu/">Vireo</a></li>
+          <li><a href="http://connections.ideals.illinois.edu/">BibApp</a></li>
+          <li><a href="https://wiki.cites.uiuc.edu/wiki/display/~wingram2">Medusa</a></li>
+        </ul>
+      </div>	
+      <div class="social">
+        <h3>Social</h3>
+        <ul>
+          <li><a href="https://github.com/waingram">GitHub</a></li>
+          <li><a href="http://www.linkedin.com/in/waingram">LinkedIn</a></li>
+          <li><a href="http://www.flickr.com/people/billingram/">Flickr</a></li>
+          <li><a href="https://plus.google.com/112120275257508476932/">Google+</a></li>
+          <li><a href="http://twitter.com/#!/sudobear">Twitter</a></li>
+        </ul>
+      </div>
+		</aside>
+		
+	</div> <!-- #main -->
+</div> <!-- #main-container -->
+
+<div id="footer-container">
+	<footer class="wrapper">
+		<p>Copyright © 2010-2012 <a href="http://bill-ingram.com/">Bill Ingram</a></p>
+	</footer>
+</div>
+	
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.7.2.min.js"><\/script>')</script>
 

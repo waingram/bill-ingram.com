@@ -78,11 +78,8 @@ body{ font:16px/26px Helvetica, Helvetica Neue, Arial; }
 .wrapper{
 	width:90%;
 	margin:0 5%;
-}
-
-#page {
-	margin: 2em auto;
-	max-width: 1000px;
+	padding: 30px 24px;
+	position: relative;
 }
 
 
@@ -117,7 +114,6 @@ nav a:hover{
 
 
 #header-container {
-	border-bottom: 1px solid limeGreen;
 }
 	
 #main{
@@ -130,7 +126,7 @@ nav a:hover{
 
 #main aside{
 	color:#444;
-	padding:0px 5% 10px;
+	padding:10px 5% 10px;
 }
 
 #footer-container footer{
@@ -301,6 +297,15 @@ a:hover {
 	text-decoration: underline;
 }
 
+h1 a, h1 a:focus, h1 a:active, h1 a:hover, h1 a:visited,
+h2 a, h2 a:focus, h2 a:active, h2 a:hover, h2 a:visited,
+h3 a, h3 a:focus, h3 a:active, h3 a:hover, h3 a:visited,
+h4 a, h4 a:focus, h4 a:active, h4 a:hover, h4 a:visited,
+h5 a, h5 a:focus, h5 a:active, h5 a:hover, h5 a:visited,
+header a, header a:focus, header a:active, header a:hover, header a:visited {
+	color: #1982d1;
+}
+
 /* Assistive text */
 .assistive-text {
 	position: absolute !important;
@@ -322,129 +327,41 @@ a:hover {
 /* =Header
 ----------------------------------------------- */
 
-.icon {
-	font-size: 1.2em;
-	color:limeGreen;
+header[role="banner"] {
+	display: inline;
+	float: left;
+	margin: 5px 0 30px;
 }
 
-#branding {
-	border-top: 2px solid #bbb;
-	padding-bottom: 10px;
-	position: relative;
-	z-index: 2;
-}
-#site-title {
-	margin-right: 270px;
-	padding: 3.65625em 0 0;
-}
-#site-title a {
-	color: #111;
-	font-size: 30px;
-	font-weight: bold;
-	line-height: 36px;
-	text-decoration: none;
-}
-#site-title a:hover,
-#site-title a:focus,
-#site-title a:active {
-	color: #1982d1;
-}
-#site-description {
-	color: #7a7a7a;
-	font-size: 14px;
-	margin: 0 270px 3.65625em 0;
-}
-#branding img {
-	height: auto;
-	margin-bottom: -7px;
-	width: 100%;
-}
-.profile-card .fullname {
-	font-size: 30px;
-	line-height: 1;
-	margin-bottom: 2px;
-}
-.fullname {
-	font-weight: bold;
-	color: 
-	#333;
+header[role="banner"] hgroup {
+	float:left;
 }
 
-.profile-card .username {
-	margin-bottom: 1px;
-	font-size: 18px;
+header[role="banner"] h1 {
+	font: 40px "Calibri Bold Italic", Arial, Helvetica, sans-serif;
+	font-size-adjust: 0.471;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: -1px;
+	text-transform: lowercase;
+	margin: 45px 0 0;
+	text-shadow: 1px 1px 3px #333;
+}
+
+header[role="banner"] h2 {
+	font: 23px "Mahalia Regular", "Lucida Handwriting", cursive;
 	font-weight: normal;
-	line-height: 24px;
-	color: 
-	#777;
-}
-.bio {
-	font: italic 13px/18px Georgia,Times New Roman,serif;
-	color: 
-	#777;
-	word-wrap: break-word;
-}
-.profile-card .location-and-url {
-	font-size: 12px;
-	line-height: 18px;
-	color: 
-	#777;
-}
-.profile-card .divider {
-	padding: 0 2px;
-	color: 
-	#CCC;
-}
-.location-and-url .url {
-	word-wrap: break-word;
-}
-
-/* ===== Secondary Styles =====================================================
-   Author:
-   ========================================================================== */
-
-#branding{
-	border-top:0;
-}
-
-#site-title{
-	padding:0 0 6px;
-}
-
-#site-description{
-	margin:0;
-}
-
-#access{
-	background:none;
-	-webkit-box-shadow:none;
-	   -moz-box-shadow:none;
-	        box-shadow:none;
-}
-
-#access li{
-	background:#f6f6f6;
-}
-
-#access a{
-	color:#444;
-}
-
-header form{
-	display:none;
-}
-
-#branding hgroup{
-	margin-bottom:0px;
+	letter-spacing: 0;
+	text-transform: none;
+	margin-right: 3px;
+	line-height: 20px;
 }
 
 #face-group{
-/*	position:absolute;
-	right:0px;
-	bottom:-170px; */
-	width:180px;
-	float:left;
+	width:153px;
 	overflow:hidden;
+	float:left;
+	margin-right: 20px;
 }
 
 #face-group #face{
@@ -462,40 +379,37 @@ header form{
 }
 
 #follow-group{
-	float:left;
-	margin-top:20px;
-	width:120px;
+	margin:20px auto 0;
+	width:180px;
+	text-align:left;
 }
 
 #follow-text{
 	display:block;
 }
 
+/* ===== Secondary Styles =====================================================
+   Author:
+   ========================================================================== */
+
+
+article, aside {
+	background:white;
+	padding: 25px;
+	float: left;
+	width: 248px;
+	border: 1px solid limeGreen;
+	-webkit-barder-radius: 20px;
+	   -moz-border-radius: 20px;
+	        border-radius: 20px;
+}
+
+
+
 article footer .twitter-follow-button{
 	margin-bottom:20px;
 }
 
-#site-title,
-#site-description{
-	clear:none;
-}
-
-#respond{
-	background:none;
-	border:0;
-}
-
-#respond input#submit{
-	color:#444;
-	text-shadow:none;
-	background:#eee;
-	position:static;
-	padding:5px 22px;
-}
-
-#colophon{
-	display:none;
-}
 
 .socialUtils {
 	margin:0 auto 20px;
@@ -508,14 +422,6 @@ article footer .twitter-follow-button{
 	float:left;
 }
 
-.singular .hentry{
-	padding:0;
-}
-
-.syntaxhighlighter.sourcecode{
-	font-size:0.8em!important;
-	margin-bottom:24px!important;
-}
 
 .entry-content h1{ font-size:2.4em; }
 .entry-content h2,
@@ -536,6 +442,11 @@ article footer .twitter-follow-button{
 	margin: 20px;
 }
 
+.hresume section h3 {
+	background:grey;
+	width:100%;
+}
+
 /* =============================================================================
    Media Queries
    ========================================================================== */
@@ -546,16 +457,47 @@ article footer .twitter-follow-button{
     INTERMEDIATE: Menu
    ==================== */
 	
-	nav a{
-		float:left;
-		width:27%;
-		margin:0 1.7%;
-		padding:2%;
-		margin-bottom:0;
+	
+	nav[role="navigation"] {
+		text-transform: lowercase;
+		font-style: normal;
+		letter-spacing: 1px;
+		float: right;
+		position: absolute;
+		top: 0;
+		right: 24px;
 	}
 	
-	nav li:first-child a{ margin-left:0;  }
-	nav li:last-child  a{ margin-right:0; }
+	nav[role="navigation"] ul {
+		float: left;
+		width: 100%;
+	}	
+	nav[role="navigation"] li {
+		float: left;
+		width: 108px;
+		margin-left: 12px;
+		text-align: center;
+		padding: 0;
+		background: none;
+	}
+	nav[role="navigation"] a {
+		color: #FFF8D2;
+		text-decoration: none;
+		display: block;
+		background: url(../images/navTabBG.png) no-repeat 0 -151px;
+		line-height: 40px;
+		height: 42px;
+	}
+	nav[role="navigation"] a:hover {
+		background-position: 0 0;
+		color: 
+		white;
+		line-height: 50px;
+		height: 57px;
+	}
+	
+	nav[role="navigation"] li:first-child a{ margin-left:0;  }
+	nav[role="navigation"] li:last-child  a{ margin-right:0; }
 	
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -589,11 +531,7 @@ article footer .twitter-follow-button{
 	#title{
 		float:left;
 	}
-
-	nav{
-		float:right;
-		width:38%;
-	}
+	
 
 /* ============
     WIDE: Main
@@ -606,7 +544,7 @@ article footer .twitter-follow-button{
 		
 	#main aside{
 		float:right;
-		width:28%;
+		width:24%;
 	}
 }
 
@@ -619,7 +557,10 @@ article footer .twitter-follow-button{
 	.wrapper{
 		width:1026px; /* 1140px - 10% for margins */
 		margin:0 auto;
+		padding: 30px 24px;
+		position: relative;
 	}
+	
 }
 
 /* =============================================================================
