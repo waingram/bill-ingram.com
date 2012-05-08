@@ -488,9 +488,13 @@ article footer .twitter-follow-button{
 		color: #FFF8D2;
 		text-decoration: none;
 		display: block;
-		background: url(../images/navTabBG.png) no-repeat 0 -151px;
+		/*background: url(../images/navTabBG.png) no-repeat 0 -151px;*/
 		line-height: 40px;
 		height: 42px;
+		background: #1982D1;
+	-webkit-barder-radius: 20px;
+	   -moz-border-radius: 20px;
+	        border-radius: 20px;
 	}
 	nav[role="navigation"] a:hover {
 		background-position: 0 0;
