@@ -398,7 +398,7 @@ article, aside {
 	padding: 25px;
 	float: left;
 	width: 248px;
-	border: 1px solid limeGreen;
+	/*border: 1px solid limeGreen;*/
 	-webkit-barder-radius: 20px;
 	   -moz-border-radius: 20px;
 	        border-radius: 20px;
