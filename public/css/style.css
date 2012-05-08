@@ -362,7 +362,7 @@ header[role="banner"] h2 {
 }
 
 #face-group{
-	width:153px;
+	width:120px;
 	overflow:hidden;
 	float:left;
 	margin-right: 20px;
@@ -489,19 +489,18 @@ article footer .twitter-follow-button{
 		text-decoration: none;
 		display: block;
 		/*background: url(../images/navTabBG.png) no-repeat 0 -151px;*/
-		line-height: 40px;
-		height: 42px;
+		line-height: 5px;
+		height: 5px;
 		background: #1982D1;
-	-webkit-barder-radius: 20px;
-	   -moz-border-radius: 20px;
-	        border-radius: 20px;
+		-webkit-barder-radius: 0 0 20px 20px;
+		   -moz-border-radius: 0 0 20px 20px;
+		        border-radius: 0 0 20px 20px;
 	}
 	nav[role="navigation"] a:hover {
 		background-position: 0 0;
-		color: 
-		white;
-		line-height: 50px;
-		height: 57px;
+		color: white;
+		line-height: 12px;
+		height: 12px;
 	}
 	
 	nav[role="navigation"] li:first-child a{ margin-left:0;  }
