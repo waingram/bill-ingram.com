@@ -344,7 +344,6 @@ header[role="banner"] h1 {
 	font-weight: bold;
 	letter-spacing: -1px;
 	text-transform: lowercase;
-	margin: 45px 0 0;
 	text-shadow: 1px 1px 3px #333;
 }
 
@@ -355,6 +354,11 @@ header[role="banner"] h2 {
 	text-transform: none;
 	margin-right: 3px;
 	line-height: 20px;
+}
+
+#title-group {
+	margin-top: 25px;
+	float: left;
 }
 
 #face-group{
