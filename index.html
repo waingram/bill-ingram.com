@@ -33,6 +33,7 @@
     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
 
+    google.load("jquery", "1.7.2");
     google.load("feeds", "1");
 
     function initialize() {
@@ -41,34 +42,31 @@
       var tumb = new google.feeds.Feed("http://sudobear.tumblr.com/rss");
       blog.load(function(result) {
         if (!result.error) {
-          var container = document.getElementById("blog");
           for (var i = 0; i < result.feed.entries.length; i++) {
             var entry = result.feed.entries[i];
-            var div = document.createElement("div");
-            div.appendChild(entry.content);
-            container.appendChild(div);
+            $('#blog').append('<p>' + entry.content + '</p>');
+            $('#blog').append(entry.publishedDate + '<br>');
+            $('#blog').append('<hr>');
           }
         }
       });
       twit.load(function(result) {
         if (!result.error) {
-          var container = document.getElementById("twit");
           for (var i = 0; i < result.feed.entries.length; i++) {
             var entry = result.feed.entries[i];
-            var div = document.createElement("div");
-            div.appendChild(entry.content);
-            container.appendChild(div);
+            $('#twit').append('<p>' + entry.content + '</p>');
+            $('#twit').append(entry.publishedDate + '<br>');
+            $('#twit').append('<hr>');
           }
         }
       });
       tumb.load(function(result) {
         if (!result.error) {
-          var container = document.getElementById("tumb");
           for (var i = 0; i < result.feed.entries.length; i++) {
             var entry = result.feed.entries[i];
-            var div = document.createElement("div");
-            div.appendChild(entry.content);
-            container.appendChild(div);
+            $('#tumb').append('<p>' + entry.content + '</p>');
+            $('#tumb').append(entry.publishedDate + '<br>');
+            $('#tumb').append('<hr>');
           }
         }
       });
