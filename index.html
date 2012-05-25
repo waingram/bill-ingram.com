@@ -45,7 +45,7 @@
           for (var i = 0; i < result.feed.entries.length; i++) {
             var entry = result.feed.entries[i];
             var div = document.createElement("div");
-            div.appendChild(document.createTextNode(entry.content));
+            div.innerHTML(entry.content));
             container.appendChild(div);
           }
         }
@@ -56,7 +56,7 @@
           for (var i = 0; i < result.feed.entries.length; i++) {
             var entry = result.feed.entries[i];
             var div = document.createElement("div");
-            div.appendChild(document.createTextNode(entry.content));
+            div.innerHTML(entry.content));
             container.appendChild(div);
           }
         }
@@ -67,7 +67,7 @@
           for (var i = 0; i < result.feed.entries.length; i++) {
             var entry = result.feed.entries[i];
             var div = document.createElement("div");
-            div.appendChild(document.createTextNode(entry.content));
+            div.innerHTML(entry.content));
             container.appendChild(div);
           }
         }
