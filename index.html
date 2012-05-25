@@ -44,7 +44,7 @@
         if (!result.error) {
           for (var i = 0; i < result.feed.entries.length; i++) {
             var entry = result.feed.entries[i];
-            $('#blog').append('<p>' + entry.content + '</p>');
+            $('#blog').append('<a href="' + entry.link + '">' + entry.content + '</a>');
             $('#blog').append(entry.publishedDate + '<br>');
             $('#blog').append('<hr>');
           }
@@ -54,7 +54,7 @@
         if (!result.error) {
           for (var i = 0; i < result.feed.entries.length; i++) {
             var entry = result.feed.entries[i];
-            $('#twit').append('<p>' + entry.content + '</p>');
+            $('#twit').append('<a href="' + entry.link + '">' + entry.content + '</a>');
             $('#twit').append(entry.publishedDate + '<br>');
             $('#twit').append('<hr>');
           }
@@ -64,7 +64,7 @@
         if (!result.error) {
           for (var i = 0; i < result.feed.entries.length; i++) {
             var entry = result.feed.entries[i];
-            $('#tumb').append('<p>' + entry.content + '</p>');
+            $('#tumb').append('<a href="' + entry.link + '">' + entry.content + '</a>');
             $('#tumb').append(entry.publishedDate + '<br>');
             $('#tumb').append('<hr>');
           }
@@ -93,10 +93,10 @@
               <li><a href="http://sudobear.com/about/">About</a></li>
               <li><a href="http://sudobear.com/contact/">Contact</a></li>
             </ul>
-						<ul class="nav pull-right">
-							<li><a href="http://sudobear.com">Blog</a></li>
-							<li><a href="http://www.linkedin.com/in/waingram">CV</a></li>
-						</ul>
+	    <ul class="nav pull-right">
+	      <li><a href="http://sudobear.com">Blog</a></li>
+	      <li><a href="http://www.linkedin.com/in/waingram">CV</a></li>
+	    </ul>
           </div><!--/.nav-collapse -->
         </div>
       </div>
@@ -107,21 +107,21 @@
       <!-- Main hero unit for a primary marketing message or call to action -->
       <div class="hero-unit">
         <h1>Bill Ingram</h1>
-        <p>I am building something new here.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+        <p>Building software for academic libraries.</p>
+        <p><a class="btn btn-primary btn-large" href="http://sudobear.com/about/">Learn more &raquo;</a></p>
       </div>
 
       <!-- Example row of columns -->
       <div class="row">
-        <div class="span4">
+        <div class="span4 hero-unit">
           <h2>Blog</h2>
           <div id="blog"></div>
         </div>
-        <div class="span4">
+        <div class="span4 hero-unit">
           <h2>Twitter</h2>
           <div id="twit"></div>
        </div>
-        <div class="span4">
+        <div class="span4 hero-unit">
           <h2>Tumblr</h2>
           <div id="tumb"></div>
         </div>
