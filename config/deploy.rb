@@ -1,3 +1,9 @@
+# Deploy blog
+
+# fix 'stdin is not a tty' error
+default_run_options[:pty] = true
+default_run_options[:shell] = '/bin/bash -l'
+
 set :application, "bill-ingram.com"
 set :repository,  "git://github.com/waingram/bill-ingram.com.git"
 
