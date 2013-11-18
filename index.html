@@ -1,157 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>bill-ingram.com</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="bill-ingram.com">
-    <meta name="author" content="Bill Ingram">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>William A. Ingram</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
 
-    <!-- Le styles -->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <style type="text/css">
-      body {
-        padding-top: 60px;
-        padding-bottom: 40px;
-      }
-    </style>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
 
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <!-- HEADER -->
+        <div id="header">
+            <div class="container">
+                <h1 id="logo"><a href="index.html">William A. Ingram</a></h1>
+                <ul class="navigation">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">CV</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul><!--end navigation-->
+            </div><!-- end container -->
+        </div><!--end header-->
 
-    <!-- Le fav and touch icons -->
-    <link rel="shortcut icon" href="ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
-    
-    <!-- Le Google feeds API -->    
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
 
-    google.load("jquery", "1.7.1");
-    google.load("feeds", "1");
+        <div id="about" class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="content-box rotate">
+                        <div class="content-box about-image">
+                            <img src="img/bill-ingram.jpg" alt="William A. Ingram" />
+                        </div>
+                    </div>
+                    <p class="lead">Bill Ingram is a Research Programmer for Scholarly Communication and Repository
+                        Services in the <a href="http://library.illinois.edu/">University Library</a> at the <a
+                                href="http://illinois.edu/">University of Illinois at Urbana-Champaign</a>. He leads the
+                        group of library application developers responsible for analyzing, designing, implementing, and
+                        supporting software systems related to scholarly communications and digital libraries. He is
+                        technical lead for various projects and services supporting scholarly communications at the
+                        library, including the <a href="http://ideals.illinois.edu/">Illinois Digital Environment for
+                            Access to Learning and Scholarship (IDEALS)</a> and the Electronic Thesis and Dissertation
+                        deposit service. Prior to this, Ingram brought his programming skills combined with his in-depth
+                        knowledge of metadata, digital library development, and user services to bear on several
+                        research grant projects.</p>
 
-    function initialize() {
-      var blog = new google.feeds.Feed("http://sudobear.com/blog/rss.xml");
-      var twit = new google.feeds.Feed("http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=sudobear");
-      var tumb = new google.feeds.Feed("http://sudobear.tumblr.com/rss");
-      blog.load(function(result) {
-        if (!result.error) {
-          for (var i = 0; i < result.feed.entries.length; i++) {
-            var entry = result.feed.entries[i];
-            $('#blog').append('<a href="' + entry.link + '">' + entry.content + '</a>');
-            $('#blog').append(entry.publishedDate + '<br>');
-            $('#blog').append('<hr>');
-          }
-        }
-      });
-      twit.load(function(result) {
-        if (!result.error) {
-          for (var i = 0; i < result.feed.entries.length; i++) {
-            var entry = result.feed.entries[i];
-            $('#twit').append('<a href="' + entry.link + '">' + entry.content + '</a>');
-            $('#twit').append(entry.publishedDate + '<br>');
-            $('#twit').append('<hr>');
-          }
-        }
-      });
-      tumb.load(function(result) {
-        if (!result.error) {
-          for (var i = 0; i < result.feed.entries.length; i++) {
-            var entry = result.feed.entries[i];
-            $('#tumb').append('<a href="' + entry.link + '">' + entry.content + '</a>');
-            $('#tumb').append(entry.publishedDate + '<br>');
-            $('#tumb').append('<hr>');
-          }
-        }
-      });
-    }
-    google.setOnLoadCallback(initialize);
+                    
+                </div><!-- end col-lg-12 -->
+            </div><!-- end row -->
+        </div><!-- end about -->
 
-    </script>
-  </head>
 
-  <body style="background:url(img/wood.jpg)">
+        <!-- FOOTER -->
+        <div id="footer">
+            <div class="container">
+                <div class="row">
 
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <a class="brand" href="#">Bill Ingram</a>
-          <div class="nav-collapse">
-            <ul class="nav">
-              <li class="active"><a href="#"><i class="icon icon-home icon-white"></i>Home</a></li>
-              <li><a href="http://sudobear.com/about/">About</a></li>
-              <li><a href="http://sudobear.com/contact/">Contact</a></li>
-            </ul>
-	    <ul class="nav pull-right">
-	      <li><a href="http://sudobear.com">Blog</a></li>
-	      <li><a href="http://www.linkedin.com/in/waingram">CV</a></li>
-	    </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
+                    <div class="col-lg-12" id="contact">
+                        <h2>Contact</h2>
+                            <div class="col-lg-6">
+                                <div class="vcard">
+                                    <div class="adr"><h3><a name="Home-At"></a>At <span class="type">Work</span></h3>
 
-    <div class="container"> 
+                                        <p><span class="fn n"><span class="given-name">William</span> <span
+                                                class="family-name">Ingram</span></span><br/>
+                                            <span class="title fn">Research Programmer</span><br/>
+                                            <span class="org"><span class="organization-unit">Scholarly Communication and Repository Services</span><br/>
+                                            <span class="organization-name">University of Illinois Library at Urbana-Champaign</span></span></p>
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1>Bill Ingram</h1>
-        <p>Building software for academic libraries.</p>
-        <p><a class="btn btn-primary btn-large" href="http://sudobear.com/about/">Learn more &raquo;</a></p>
-      </div>
+                                        <p><a href="http://search.grainger.uiuc.edu/top/"><span class="org">GELIC</span></a>, <span
+                                                class="post-office-box">MC-274</span><br/>
+                                            <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Grainger+Engineering+Library&amp;aq=0&amp;oq=1301+West+Spring,+Urbana,+IL+61801&amp;sll=40.107297,-88.209889&amp;sspn=0.006499,0.01295&amp;vpsrc=6&amp;t=v&amp;g=209+W+Oregon+St,+Urbana,+Illinois+61801&amp;ie=UTF8&amp;hq=&amp;hnear=1301+Springfield+Ave,+Urbana,+Illinois+61801&amp;ll=40.112485,-88.226889"
+                                                    ><span
+                                                    class="street-address">1301 West Springfield Avenue</span></a><br/>
+                                            <span class="locality">Urbana</span>, <span class="region">IL</span> <span>61801</span>
+                                        </p>
+                                    </div>
+                                    <p> Voice: <span class="tel">(217) 333-4648</span><br/>
+                                        Web: <a href="https://wiki.cites.uiuc.edu/wiki/display/~wingram2"
+                                                ><span class="url"><a
+                                                href="https://wiki.cites.uiuc.edu/wiki/display/~wingram2"
+                                                >https://wiki.cites.uiuc.edu/wiki/display/~wingram2</a></span></a><br/>
+                                        Email: <span class="email"><a href="mailto:wingram2@illinois.edu"
+                                                >wingram2@illinois.edu</a></span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="vcard">
+                                    <div class="adr"><h3><a name="Home-At"></a>At <span class="type">Home</span></h3>
 
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span4">
-          <h2>Blog</h2>
-          <div id="blog"></div>
-        </div>
-        <div class="span4">
-          <h2>Twitter</h2>
-          <div id="twit"></div>
-       </div>
-        <div class="span4">
-          <h2>Tumblr</h2>
-          <div id="tumb"></div>
-        </div>
-      </div>
+                                        <p>
+                                            <a href="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=209+West+Oregon+Street,+Urbana,+IL+61801&amp;aq=0&amp;oq=209+W+Oregon+St,+Urbana,+IL+61801&amp;sll=40.107297,-88.209888&amp;sspn=0.012998,0.025899&amp;vpsrc=6&amp;t=v&amp;ie=UTF8&amp;hq=&amp;hnear=209+W+Oregon+St,+Urbana,+Illinois+61801&amp;ll=40.107297,-88.209889"><span
+                                                    class="street-address">209 West Oregon Street</span></a><br/>
+                                            <span class="locality">Urbana</span>, <span class="region">IL</span> <span>61801</span>
+                                        </p>
+                                    </div>
+                                    <p> Voice: <span class="tel">1217 6891453</span><br/>
+                                        Web: <a href="http://bill-ingram.com/"><span class="url">bill-ingram.com</span></a><br/>
+                                        Email: <a href="mailto:waingram@gmail.com"><span class="email">waingram@gmail.com</span></a><br/>
+                                        Twitter: <a href="https://twitter.com/sudobear">@sudobear</a><br/>
+                                        Google+: <a href="https://plus.google.com/112120275257508476932?rel=author">Google+</a>
+                                    </p>
 
-      <hr>
+                                </div>
+                            </div>
+                    </div>
+                    <!--end col-lg-12-->
 
-      <footer>
-        <p>&copy; Bill Ingram 2012</p>
-      </footer>
+                </div><!-- end row -->
+            </div><!--end container-->
+        </div><!--end footer-->
 
-    </div> <!-- /container -->
+        <!-- COPYRIGHT -->
+        <div id="copyright">
+            <div class="container">
+                <p>&copy; 2013 William A. Ingram</p>
+            </div><!--end container-->
+        </div><!-- end copyright -->
 
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
 
-    <!-- <script src="js/jquery.js"></script> -->
-    <!-- <script src="js/bootstrap-transition.js"></script> -->
-    <!-- <script src="js/bootstrap-alert.js"></script> -->
-    <!-- <script src="js/bootstrap-modal.js"></script> -->
-    <!-- <script src="js/bootstrap-dropdown.js"></script> -->
-    <!-- <script src="js/bootstrap-scrollspy.js"></script> -->
-    <!-- <script src="js/bootstrap-tab.js"></script> -->
-    <!-- <script src="js/bootstrap-tooltip.js"></script> -->
-    <!-- <script src="js/bootstrap-popover.js"></script> -->
-    <!-- <script src="js/bootstrap-button.js"></script> -->
-    <!-- <script src="js/bootstrap-collapse.js"></script> -->
-    <!-- <script src="js/bootstrap-carousel.js"></script> -->
-    <!-- <script src="js/bootstrap-typeahead.js"></script> -->
+        <script src="js/vendor/bootstrap.min.js"></script>
 
-  </body>
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
 </html>
