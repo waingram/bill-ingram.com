@@ -15,18 +15,25 @@ server "bill-ingram.com", :app, :primary => true
 set :user, "waingram"
 set :group, "waingram"
 
-set :deploy_to, "~/blog"
+set :deploy_to, "/home/waingram/blog"
+set :copy_remote_dir, "/home/waingram/tmp"
+set :normalize_asset_timestamps, false
+
 set :use_sudo, false
 
-set :deploy_via, :copy
+set :deploy_via, :remote_cache
 
+# Override default tasks which are not relevant to a non-rails app.
 namespace :deploy do
+  task :migrate do
+    puts "    Not doing migrate because we are not a Rails application."
+  end
+  task :finalize_update do
+    puts "    Not doing finalize_update because we are not a Rails application."
+  end
   task :start do ; end
   task :stop do ; end
-  task :migrate do ; end
-  task :migrations do ; end
-  task :restart, :roles => :app, :except => { :no_release => true } do
-    run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
-  end
+  task :restart do ; end
 end
+
 
