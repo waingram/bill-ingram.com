@@ -1,14 +1,166 @@
+/*!
+ * Start Bootstrap - Scrolling Nav HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
 
-
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-.lead {
-	font-size: 1.4em;
-	line-height: 1.6;
+body {
+    width: 100%;
+    height: 100%;
 }
 
-#about img {
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+/*!
+ * Start Custom style
+ */
+
+body {
+	position: relative;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.page-head {
+	margin-top: 0;
+	background: #fff;
+}
+
+.navbar {
+	padding: 5px 0;
+}
+
+.navbar-brand {
+/*	height: 85px;*/
+	padding: 0 15px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+
+
+.jumbotron h1 {
+	font-weight: 200;
+}
+
+.stories-intro h2,
+.stories-intro p {
+	font-weight: lighter;
+}
+
+.section {
+	position: relative;
+}
+
+.section-main, .section-contact {
+  background-image: -webkit-linear-gradient(top, #fff 0%, #f8f8f8 100%);
+  background-image:         linear-gradient(to bottom, #fff 0%, #f8f8f8 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#fff8f8f8', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-repeat: repeat-x;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 5px rgba(0, 0, 0, .075);
+}
+
+.section .container {
+	padding: 40px 10px;
+	position: relative;
+}
+
+.stories-intro {
+	color: #fff;
+	background: #000 url(../img/blurry-bg-2880x600.jpg) center top no-repeat;
+	padding-bottom: 100px;
+}
+
+.section-title {
+	color: #fff;
+	text-shadow: none;
+	font-weight: normal;
+/*	letter-spacing: -0.05em;*/
+	line-height: 1.1;
+	text-align: center;
+	font-size: 42px;
+	margin: 0 auto 30px;
+}
+
+.section-tagline {
+	font-size: 28px;
+	line-height: 1.2;
+	text-align: center;
+	font-weight: normal;
+}
+
+.section-main .container {
+	font-size: 16px;
+	padding-top: 140px;
+}
+
+.story-intro, .story-areas, .story-links {
+	
+}
+
+.story-title {
+	font-size: 48px;
+	line-height: 1.2;
+	text-align: center;
+	margin: 0 0 40px;
+}
+
+.story-title .name {
+	font-weight: bold;
+	color: #ff7003;
+}
+
+.story-photo .photo {
+	width: 220px;
+	height: 220px;
+	border: 8px solid #155828;
+	border-radius: 100%;
+	position: absolute;
+	left: 50%;
+	top: -120px;
+	margin-left: -114px;
+}
+
+.story-areas h3, .story-links h3 {
+	margin-top: 0;
+	text-align: left;
+}
+.story-links i {
+	width: 45px;
+	float: left;
+	margin: 0 15px 15px;
+}
+
+.section-about {
+	color: #fff;
+	background-color: #0d3268;
+}
+
+.section-about img {
 	background: #fff;
 	padding: 8px;
 	border: 1px solid #ddd;
@@ -18,17 +170,12 @@
 	box-shadow: 2px 2px 3px rgba(0,0,0,0.25);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#colophon {
+	color: #666;
+	padding: 40px 0;
+	font-size: .875em;
+	line-height: 1.285;
+	background: #fff;
+	width: 100%;
+	margin: 1em 0 0;
+}
