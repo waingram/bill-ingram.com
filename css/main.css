@@ -145,10 +145,10 @@ body {
 	margin-left: -114px;
 }
 
-.story-areas h3, .story-links h3 {
-	margin-top: 0;
-	text-align: left;
-}
+/*.story-areas h3, .story-links h3 {
+  margin-top: 0;
+  text-align: left;
+}*/
 .story-links i {
 	width: 45px;
 	float: left;
