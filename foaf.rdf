@@ -3,7 +3,8 @@
 	 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	 xmlns:owl="http://www.w3.org/2002/07/owl#"
 	 xmlns:foaf="http://xmlns.com/foaf/0.1/"
-	 xmlns:purl="http://purl.org/dc/terms/">
+	 xmlns:purl="http://purl.org/dc/terms/"
+        xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
   <foaf:PersonalProfileDocument rdf:about="http://bill-ingram.com/foaf#me">
     <foaf:maker rdf:resource="http://bill-ingram.com/#me"/>
     <foaf:primaryTopic rdf:resource="http://bill-ingram.com/#me"/>
@@ -21,6 +22,7 @@
     <foaf:skypeID>sudobear</foaf:skypeID>
     <foaf:homepage rdf:resource="http://bill-ingram.com/"/>
     <foaf:weblog rdf:resource="http://sudobear.tumblr.com/" />
+    <foaf:based_near geo:lat="40.1072929" geo:long="-88.2098746"/>
     <foaf:account>
       <foaf:OnlineAccount rdf:resource="https://twitter.com/sudobear">
         <foaf:accountServiceHomepage rdf:resource="https://twitter.com/"/>
