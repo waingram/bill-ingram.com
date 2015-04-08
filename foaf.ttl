@@ -1,0 +1,70 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+
+<http://bill-ingram.com/foaf#me>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <http://bill-ingram.com/#me> ;
+  foaf:primaryTopic <http://bill-ingram.com/#me> .
+
+<http://bill-ingram.com/#me>
+  a foaf:Person ;
+  foaf:name "Bill Ingram" ;
+  foaf:givenName "William" ;
+  foaf:familyName "Ingram" ;
+  foaf:nick "waingram" ;
+  foaf:myersBriggs "INFP" ;
+  foaf:birthday "1975-06-29" ;
+  foaf:mbox <mailto:waingram@gmail.com>, <mailto:wingram2@illinois.edu> ;
+  foaf:openid <http://bill-ingram.com/> ;
+  foaf:skypeID "sudobear" ;
+  foaf:homepage <http://bill-ingram.com/> ;
+  foaf:weblog <http://sudobear.tumblr.com/> ;
+  foaf:based_near [
+    geo:lat "40.1072929" ;
+    geo:long "-88.2098746"
+  ] ;
+  foaf:account [
+    a foaf:OnlineAccount ;
+    foaf:accountServiceHomepage <https://twitter.com/> ;
+    foaf:accountName "sudobear"
+  ], [
+    a foaf:OnlineAccount ;
+    foaf:accountServiceHomepage <https://www.flickr.com/> ;
+    foaf:accountName "bill.ingram"
+  ], [
+    a foaf:OnlineAccount ;
+    foaf:accountServiceHomepage <https://www.linkedin.com/> ;
+    foaf:accountName "waingram"
+  ], [
+    a foaf:OnlineAccount ;
+    foaf:accountServiceHomepage <https://plus.google.com/u/0/> ;
+    foaf:accountName "+WilliamIngramSr"
+  ] ;
+  owl:sameAs <https://graph.facebook.com/bill.ingram> ;
+  foaf:interest <http://dbpedia.org/resource/Semantic_Web> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Colleen Fallaw" ;
+    foaf:mbox_sha1sum "6793dc75ee30ab8cdf45620c652016cf8ef0e609" ;
+    rdfs:seeAlso <http://courseweb.lis.illinois.edu/~mfall3/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Howard Ding" ;
+    foaf:mbox_sha1sum "7a1a29ef1b6ac8acfbe19e6dd87bbe14ea8d18fa" ;
+    rdfs:seeAlso <http://www.hading.dyndns.org/hading.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Seth Robbins" ;
+    foaf:mbox_sha1sum "da037c23cdea8665aa7ab9f8e960719cd3ca8596" ;
+    rdfs:seeAlso <https://dl.dropboxusercontent.com/u/76857828/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Jon Gorman" ;
+    foaf:mbox_sha1sum "2010c10ca8da41a073700cd9cc6f8a183f98bcc9" ;
+    rdfs:seeAlso <http://www.j-gorman.com/storage/foaf.rdf>
+  ] .
+
+<http://dbpedia.org/resource/Semantic_Web> dc:title "Semantic Web" .
