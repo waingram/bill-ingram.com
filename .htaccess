@@ -14,7 +14,7 @@ AddType application/rdf+xml .rdf
 
 # Rewrite engine setup
 RewriteEngine On
-RewriteBase /tests
+RewriteBase /
 
 # Rewrite rule to serve HTML content from the foaf URI if requested
 RewriteCond %{HTTP_ACCEPT} !application/rdf\+xml.*(text/html|application/xhtml\+xml)
