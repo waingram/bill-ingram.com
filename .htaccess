@@ -1,0 +1,4 @@
+AddType text/turtle .ttl
+AddType application/rdf+xml .rdf
+AddType application/ld+xml .jsonld
+AddType application/N-Triples .nt
