@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	 xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	 xmlns:owl="http://www.w3.org/2002/07/owl#"
+	 xmlns:foaf="http://xmlns.com/foaf/0.1/">
+  <foaf:PersonalProfileDocument rdf:about="">
+    <foaf:maker rdf:resource="http://bill-ingram.com/#me"/>
+    <foaf:primaryTopic rdf:resource="http://bill-ingram.com/#me"/>
+  </foaf:PersonalProfileDocument>
+  <foaf:Person rdf:about="http://bill-ingram.com/#me">
+    <foaf:name>Bill Ingram</foaf:name>
+    <foaf:givenName>William</foaf:givenName>
+    <foaf:familyName>Ingram</foaf:familyName>
+    <foaf:nick>waingram</foaf:nick>
+    <foaf:myersBriggs>INFP</foaf:myersBriggs>
+    <foaf:birthday>1975-06-29</foaf:birthday>
+    <foaf:mbox rdf:resource="mailto:waingram@gmail.com" />
+    <foaf:mbox rdf:resource="mailto:wingram2@illinois.edu" />
+    <foaf:openid rdf:resource="http://bill-ingram.com/" />
+    <foaf:skypeID>sudobear</foaf:skypeID>
+    <foaf:homepage rdf:resource="http://bill-ingram.com/"/>
+    <foaf:weblog rdf:resource="http://sudobear.tumblr.com/" />
+    <foaf:account>
+      <foaf:OnlineAccount rdf:resource="https://twitter.com/sudobear">
+        <foaf:accountServiceHomepage rdf:resource="https://twitter.com/"/>
+        <foaf:accountName>sudobear</foaf:accountName>
+      </foaf:OnlineAccount>
+    </foaf:account>
+    <foaf:account>
+      <foaf:OnlineAccount rdf:resource="https://www.linkedin.com/in/waingram">
+        <foaf:accountServiceHomepage rdf:resource="https://www.linkedin.com/"/>
+        <foaf:accountName>waingram</foaf:accountName>
+      </foaf:OnlineAccount>
+    </foaf:account>
+    <foaf:account>
+      <foaf:OnlineAccount rdf:resource="https://plus.google.com/+WilliamIngramSr/">
+        <foaf:accountServiceHomepage rdf:resource="https://plus.google.com/"/>
+        <foaf:accountName>WilliamIngramSr</foaf:accountName>
+      </foaf:OnlineAccount>
+    </foaf:account>
+    <!-- <owl:sameAs rdf:resource="http://semantictweet.com/sudobear#me" /> -->
+    <foaf:knows>
+      <foaf:Person>
+	<foaf:name>Colleen Fallaw</foaf:name>
+	<foaf:mbox_sha1sum>6793dc75ee30ab8cdf45620c652016cf8ef0e609</foaf:mbox_sha1sum>
+	<rdfs:seeAlso rdf:resource="http://courseweb.lis.illinois.edu/~mfall3/foaf.ttl"/>
+      </foaf:Person>
+    </foaf:knows>
+    <foaf:knows>
+      <foaf:Person>
+	<foaf:name>Howard Ding</foaf:name>
+	<foaf:mbox_sha1sum>7a1a29ef1b6ac8acfbe19e6dd87bbe14ea8d18fa</foaf:mbox_sha1sum>
+	<rdfs:seeAlso rdf:resource="http://www.hading.dyndns.org/hading.ttl"/>
+      </foaf:Person>
+    </foaf:knows>
+    <foaf:knows>
+      <foaf:Person>
+	<foaf:name>Seth Robbins</foaf:name>
+	<foaf:mbox_sha1sum>da037c23cdea8665aa7ab9f8e960719cd3ca8596</foaf:mbox_sha1sum>
+	<rdfs:seeAlso rdf:resource="https://dl.dropboxusercontent.com/u/76857828/foaf.ttl"/>
+      </foaf:Person>
+    </foaf:knows>
+    <foaf:knows>
+      <foaf:Person>
+	<foaf:name>Jon Gorman</foaf:name>
+	<foaf:mbox_sha1sum>2010c10ca8da41a073700cd9cc6f8a183f98bcc9</foaf:mbox_sha1sum>
+	<rdfs:seeAlso rdf:resource="http://www.j-gorman.com/storage/foaf.rdf"/>
+      </foaf:Person>
+    </foaf:knows>
+  </foaf:Person>
+</rdf:RDF>
